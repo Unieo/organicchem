@@ -1,0 +1,298 @@
+/* CSS/index/general.css - Updated for hamburger menu */
+@import url("../shared/variables.css");
+@import url("../shared/responsive.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background var(--transition-slow), color var(--transition-slow);
+}
+
+/* Header Styles */
+.header {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--header-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+}
+
+/* Mobile header controls */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main navigation hamburger */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px;
+  color: var(--text-color);
+  transition: all var(--transition-normal);
+}
+
+.nav-hamburger:hover {
+  color: #667eea;
+  transform: scale(1.1);
+}
+
+/* Mobile navigation dropdown */
+.mobile-nav {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  max-height: 0;
+  overflow: hidden; /* Keep hidden for animation */
+  transition: max-height var(--transition-normal);
+}
+
+.mobile-nav.active {
+  max-height: 500px; /* Enough space for dropdown */
+  padding: 15px 0;
+  overflow: visible; /* Allow dropdown to show */
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.mobile-nav .dropdown-modern {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-nav .dropdown-content-modern {
+  position: relative !important;
+  width: 100% !important;
+  margin-top: 5px !important;
+  animation: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--border-color) !important;
+  display: none; /* Keep it hidden by default */
+  max-height: none !important; /* Remove max-height restriction */
+}
+
+.mobile-nav .dropdown-modern.active .dropdown-content-modern {
+  display: block; /* Show when active */
+}
+
+/* Ensure dropdown doesn't get cut off */
+.mobile-nav .dropdown-content-modern {
+  position: relative;
+  transform: none !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.mobile-nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  border-left-color: #667eea;
+}
+
+.mobile-nav-link i {
+  font-size: 1.1em;
+  width: 20px;
+  text-align: center;
+}
+
+/* Desktop navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.contact-link:hover {
+  color: #667eea;
+  transform: translateY(-1px);
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-gradient);
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
+}
+
+.contact-link:hover::after {
+  width: 80%;
+}
+
+/* Main content styling */
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content h1 {
+  font-size: clamp(2em, 5vw, 3em);
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-content p {
+  color: var(--text-muted);
+  font-size: clamp(1em, 3vw, 1.3em);
+  line-height: 1.8;
+  max-width: min(700px, 90vw);
+  margin: 0 auto 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--card-radius);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow);
+  border-color: #667eea;
+}
+
+.feature-card h3 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .mobile-nav {
+    position: relative;
+    z-index: 1001;
+  }
+
+  .mobile-nav.active {
+    max-height: 800px; /* Even more space for dropdown */
+    overflow: visible;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav .dropdown-modern {
+    width: 100%;
+  }
+
+  .mobile-nav .dropbtn-modern {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mobile-nav .dropdown-content-modern {
+    position: relative;
+    margin-top: 8px;
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+  }
+
+  .mobile-nav .dropdown-content-modern a {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .mobile-nav .dropdown-content-modern a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
+}

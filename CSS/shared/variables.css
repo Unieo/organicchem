@@ -1,0 +1,53 @@
+/* CSS/shared/variables.css */
+:root {
+  /* Colors - Light Theme Default */
+  --primary-gradient: linear-gradient(135deg, #667eea, #764ba2);
+  --bg-color: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --card-bg: #f8f9fa;
+  --text-color: #2c3e50;
+  --text-muted: #7f8c8d;
+  --border-color: #e9ecef;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Chapter-specific colors */
+  --haloalkanes: #ff6b6b;
+  --haloarenes: #a29bfe;
+  --alcohols: #00cec9;
+  --phenols: #fd79a8;
+  --ethers: #fdcb6e;
+  --aldehydes: #74b9ff;
+  --ketones: #55efc4;
+  --carboxylic: #e17055;
+  --amines: #a29bfe;
+
+  /* Spacing */
+  --header-padding: 20px 50px;
+  --content-padding: 80px 50px;
+  --card-padding: 30px;
+
+  /* Borders */
+  --border-radius: 8px;
+  --card-radius: 12px;
+
+  /* Shadows */
+  --header-shadow: 0 4px 30px var(--shadow-color);
+  --card-shadow: 0 15px 35px var(--shadow-color);
+  --button-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --bg-color: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  --header-bg: rgba(15, 15, 25, 0.95);
+  --card-bg: rgba(30, 30, 45, 0.7);
+  --text-color: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
