@@ -4,11 +4,13 @@ import { debounce } from "../shared/utils.js";
 class DropdownManager {
   constructor() {
     this.dropdowns = new Set();
+    this.mainResourcesBtn = null;
     this.init();
   }
 
   init() {
     this.setupDropdowns();
+    this.setupMainResourcesButton();
     this.setupEventListeners();
   }
 
@@ -54,7 +56,55 @@ class DropdownManager {
     }
   }
 
+  setupMainResourcesButton() {
+    const mainResourcesBtn = document.querySelector(".resources-btn-main");
+    const mainDropdown = mainResourcesBtn?.parentElement?.querySelector(
+      ".dropdown-content-modern"
+    );
+
+    if (mainResourcesBtn && mainDropdown) {
+      this.mainResourcesBtn = {
+        button: mainResourcesBtn,
+        dropdown: mainDropdown,
+        parent: mainResourcesBtn.parentElement,
+      };
+
+      mainResourcesBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        this.toggleMainResourcesDropdown(mainDropdown);
+      });
+
+      // Prevent dropdown from closing when clicking inside it
+      mainDropdown.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+    }
+  }
+
+  toggleMainResourcesDropdown(content) {
+    const isVisible = content.classList.contains("show");
+
+    // Close all regular dropdowns first
+    this.closeAllDropdowns();
+
+    if (!isVisible) {
+      content.classList.add("show");
+      content.style.display = "block";
+    } else {
+      content.classList.remove("show");
+      content.style.display = "none";
+    }
+  }
+
+  closeMainResourcesDropdown() {
+    if (this.mainResourcesBtn) {
+      this.mainResourcesBtn.dropdown.classList.remove("show");
+      this.mainResourcesBtn.dropdown.style.display = "none";
+    }
+  }
+
   closeAllDropdowns() {
+    // Close regular dropdowns
     this.dropdowns.forEach((dropdown) => {
       const content = dropdown.querySelector(".dropdown-content-modern");
       dropdown.classList.remove("active");
@@ -62,6 +112,9 @@ class DropdownManager {
         content.style.display = "none";
       }
     });
+
+    // Close main resources dropdown
+    this.closeMainResourcesDropdown();
   }
 
   setupEventListeners() {
@@ -87,8 +140,10 @@ class DropdownManager {
   }
 
   handleResize() {
-    // Additional resize handling if needed
-    console.log("Window resized - dropdowns maintained");
+    // On mobile, ensure dropdowns are closed when switching orientation
+    if (window.innerWidth <= 768) {
+      this.closeAllDropdowns();
+    }
   }
 
   // Public method to add new dropdown dynamically

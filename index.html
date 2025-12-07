@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="CSS/index/general.css" />
     <link rel="stylesheet" href="CSS/index/dropdown.css" />
     <link rel="stylesheet" href="CSS/index/theme.css" />
-    <link rel="stylesheet" href="/CSS/shared/footer.css" />
   </head>
 
   <body>
@@ -77,58 +76,64 @@
     </div>
 
     <div class="main-content">
-      <h1>Welcome to Organic Chemistry Resources</h1>
-      <p>
-        Explore comprehensive guides and detailed information about different
-        organic compounds and their properties. Select a chapter from the
-        Resources dropdown to get started.
-      </p>
+      <div class="welcome-section">
+        <h1>Welcome to Organic Chemistry Resources</h1>
+        <p>
+          To get started, click on the Resources button and select a chapter.
+        </p>
 
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Comprehensive Coverage</h3>
-          <p>
-            Detailed explanations of all major organic chemistry topics with
-            interactive examples.
-          </p>
+        <div class="resources-btn-section">
+          <div class="dropdown-modern">
+            <button class="resources-btn-main">Resources</button>
+            <div class="dropdown-content-modern">
+              <a href="subpages/HaloAlkanes.html">HaloAlkanes</a>
+              <a href="subpages/HaloArenes.html">HaloArenes</a>
+              <a href="subpages/Alcohols.html">Alcohols</a>
+              <a href="subpages/Phenols.html">Phenols</a>
+              <a href="subpages/Ethers.html">Ethers</a>
+              <a href="subpages/Aldehydes.html">Aldehydes</a>
+              <a href="subpages/Ketones.html">Ketones</a>
+              <a href="subpages/CarboxylicAcids.html">Carboxylic Acids</a>
+              <a href="subpages/Amines.html">Amines</a>
+            </div>
+          </div>
         </div>
-        <div class="feature-card">
-          <h3>Visual Learning</h3>
-          <p>
-            Molecular structures and reaction mechanisms presented with clear
-            visual aids.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>Practice Problems</h3>
-          <p>
-            Test your understanding with curated practice problems and
-            solutions.
-          </p>
-        </div>
+      </div>
+
+      <div class="project-description">
+        <h2>About This Project</h2>
+        <p>
+          This is an open-source educational platform designed to help students
+          learn organic chemistry through comprehensive guides, detailed
+          explanations, and interactive learning materials.
+        </p>
+        <p>
+          The project covers all major organic chemistry topics including
+          HaloAlkanes, Alcohols, Aldehydes, Ketones, Carboxylic Acids, Amines,
+          and more. Each chapter provides in-depth information about compound
+          properties, reactions, and practical applications.
+        </p>
+        <p>
+          <strong>This project is licensed under GPL v3.</strong> This means
+          derivative works must remain open source, fostering collaboration and
+          continuous improvement of educational resources.
+        </p>
+        <p>
+          We welcome contributions from educators, students, and developers.
+          Whether you want to fix a typo, add new content, or improve the
+          codebase, your contributions are highly appreciated!
+        </p>
+
+        <a
+          href="https://github.com/Unieo/organicchem"
+          target="_blank"
+          class="github-link"
+        >
+          <i class="fa-brands fa-github"></i>
+          Contribute on GitHub
+        </a>
       </div>
     </div>
-
-    <footer>
-      <div class="footer">
-        <p class="end">
-          Organic Chem Online Resources © 2025 Mikhail Fernandes
-        </p>
-        <p class="end">
-          Licensed under GPL v3. Derivative works must remain open source.
-        </p>
-        <p class="end">We welcome contributions back to the main project.</p>
-        <div class="socials">
-          <a
-            target="_blank"
-            title="Contribute to the Project"
-            href="https://github.com/Unieo/organicchem"
-          >
-            <i class="fa-brands fa-github fa-xl"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
 
     <!-- JavaScript Files -->
     <script type="module" src="JS/index/dropdown.js"></script>

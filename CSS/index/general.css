@@ -34,6 +34,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .title {
@@ -75,14 +78,14 @@ body {
   background: var(--card-bg);
   border-top: 1px solid var(--border-color);
   max-height: 0;
-  overflow: hidden; /* Keep hidden for animation */
+  overflow: hidden;
   transition: max-height var(--transition-normal);
 }
 
 .mobile-nav.active {
-  max-height: 500px; /* Enough space for dropdown */
+  max-height: 500px;
   padding: 15px 0;
-  overflow: visible; /* Allow dropdown to show */
+  overflow: visible;
 }
 
 .mobile-nav-links {
@@ -105,15 +108,14 @@ body {
   animation: none !important;
   box-shadow: none !important;
   border: 1px solid var(--border-color) !important;
-  display: none; /* Keep it hidden by default */
-  max-height: none !important; /* Remove max-height restriction */
+  display: none;
+  max-height: none !important;
 }
 
 .mobile-nav .dropdown-modern.active .dropdown-content-modern {
-  display: block; /* Show when active */
+  display: block;
 }
 
-/* Ensure dropdown doesn't get cut off */
 .mobile-nav .dropdown-content-modern {
   position: relative;
   transform: none !important;
@@ -185,12 +187,19 @@ body {
   width: 80%;
 }
 
-/* Main content styling */
+/* Main content styling - UPDATED */
 .main-content {
   padding: 50px 20px;
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .main-content h1 {
@@ -211,37 +220,105 @@ body {
   margin: 0 auto 40px;
 }
 
+/* Resources Button Section */
+.resources-btn-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.resources-btn-main {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 16px 42px;
+  font-size: 1.1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1em, 2.5vw, 1.2em);
+}
+
+.resources-btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Project Description - NEW SECTION */
+.project-description {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 40px;
+  margin: 60px 0;
+  border-left: 5px solid #667eea;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+.project-description h2 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-description p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-description strong {
+  color: #667eea;
+}
+
+/* GitHub Link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #24292e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-normal);
+  margin-top: 15px;
+}
+
+.github-link:hover {
+  background-color: #2ea44f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3);
+}
+
+.github-link i {
+  font-size: 1.2rem;
+}
+
+/* REMOVED: Features Grid (no longer needed) */
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-  gap: 30px;
-  margin-top: 50px;
+  display: none;
 }
 
 .feature-card {
-  background: var(--card-bg);
-  padding: 30px;
-  border-radius: var(--card-radius);
-  border: 1px solid var(--border-color);
-  transition: all var(--transition-normal);
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--card-shadow);
-  border-color: #667eea;
-}
-
-.feature-card h3 {
-  color: #667eea;
-  margin-bottom: 15px;
-  font-size: 1.4em;
-}
-
-.feature-card p {
-  color: var(--text-muted);
-  font-size: 1em;
-  margin: 0;
+  display: none;
 }
 
 /* Mobile styles */
@@ -252,7 +329,7 @@ body {
   }
 
   .mobile-nav.active {
-    max-height: 800px; /* Even more space for dropdown */
+    max-height: 800px;
     overflow: visible;
   }
 
@@ -288,11 +365,83 @@ body {
   .mobile-nav .dropdown-content-modern a:last-child {
     border-bottom: none;
   }
+
+  /* Mobile adjustments for new sections */
+  .project-description {
+    padding: 25px;
+    margin: 40px 0;
+  }
+
+  .project-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+  }
+
+  .resources-btn-main {
+    padding: 14px 32px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .github-link {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .main-content {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-description {
+    padding: 20px;
+  }
+
+  .header-content {
+    padding: 12px 15px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .resources-btn-main {
+    padding: 12px 24px;
+  }
 }
 
 /* Desktop styles */
 @media (min-width: 769px) {
   .mobile-nav {
     display: none !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .nav-hamburger,
+  .resources-btn-section,
+  .github-link {
+    display: none;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .project-description {
+    border: 1px solid #ddd;
+    box-shadow: none;
   }
 }
