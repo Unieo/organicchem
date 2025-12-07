@@ -35,13 +35,7 @@
   border-radius: var(--card-radius);
   border: 1px solid var(--border-color);
   box-shadow: var(--card-shadow);
-  transition: all var(--transition-normal);
   scroll-margin-top: 100px; /* This fixes the alignment */
-}
-
-.content-section:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 .section-title {

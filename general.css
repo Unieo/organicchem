@@ -1,0 +1,668 @@
+/* CSS/index/general.css - Updated for hamburger menu */
+@import url("../shared/variables.css");
+@import url("../shared/responsive.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background var(--transition-slow), color var(--transition-slow);
+}
+
+/* Prevent horizontal overflow on entire page */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Header Styles */
+.header {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--header-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex-shrink: 0;
+}
+
+/* Mobile header controls */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main navigation hamburger */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 5px;
+  color: var(--text-color);
+  transition: all var(--transition-normal);
+}
+
+.nav-hamburger:hover {
+  color: #667eea;
+  transform: scale(1.1);
+}
+
+/* Mobile navigation dropdown */
+.mobile-nav {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal);
+}
+
+.mobile-nav.active {
+  max-height: 500px;
+  padding: 15px 0;
+  overflow: visible;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.mobile-nav .dropdown-modern {
+  position: relative;
+  width: 100%;
+}
+
+.mobile-nav .dropdown-content-modern {
+  position: relative !important;
+  width: 100% !important;
+  margin-top: 5px !important;
+  animation: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--border-color) !important;
+  display: none;
+  max-height: none !important;
+}
+
+.mobile-nav .dropdown-modern.active .dropdown-content-modern {
+  display: block;
+}
+
+.mobile-nav .dropdown-content-modern {
+  position: relative;
+  transform: none !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.mobile-nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  border-left-color: #667eea;
+}
+
+.mobile-nav-link i {
+  font-size: 1.1em;
+  width: 20px;
+  text-align: center;
+}
+
+/* Desktop navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.contact-link:hover {
+  color: #667eea;
+  transform: translateY(-1px);
+}
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--primary-gradient);
+  transition: all var(--transition-normal);
+  transform: translateX(-50%);
+}
+
+.contact-link:hover::after {
+  width: 80%;
+}
+
+/* Ensure all main containers respect viewport */
+.header,
+.main-content,
+.mobile-nav {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Main content styling - UPDATED */
+.main-content {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.main-content h1 {
+  font-size: clamp(2em, 5vw, 3em);
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-content p {
+  color: var(--text-muted);
+  font-size: clamp(1em, 3vw, 1.3em);
+  line-height: 1.8;
+  max-width: min(700px, 90vw);
+  margin: 0 auto 40px;
+}
+
+/* Resources Button Section */
+.resources-btn-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.resources-btn-main {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 16px 42px;
+  font-size: 1.1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1em, 2.5vw, 1.2em);
+}
+
+.resources-btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Project Description - NEW SECTION */
+.project-description {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 40px;
+  margin: 60px 0;
+  border-left: 5px solid #667eea;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+.project-description h2 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-description p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 100%;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.project-description strong {
+  color: #667eea;
+}
+
+/* GitHub Link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #24292e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-normal);
+  margin-top: 15px;
+}
+
+.github-link:hover {
+  background-color: #2ea44f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 164, 79, 0.3);
+}
+
+.github-link i {
+  font-size: 1.2rem;
+}
+
+/* REMOVED: Features Grid (no longer needed) */
+.features-grid {
+  display: none;
+}
+
+.feature-card {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .mobile-nav {
+    position: relative;
+    z-index: 1001;
+  }
+
+  .mobile-nav.active {
+    max-height: 800px;
+    overflow: visible;
+  }
+
+  .nav-hamburger {
+    display: inline-block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav .dropdown-modern {
+    width: 100%;
+  }
+
+  .mobile-nav .dropbtn-modern {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mobile-nav .dropdown-content-modern {
+    position: relative;
+    margin-top: 8px;
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+  }
+
+  .mobile-nav .dropdown-content-modern a {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .mobile-nav .dropdown-content-modern a:last-child {
+    border-bottom: none;
+  }
+
+  /* MOBILE HAMBURGER FIX */
+  .header-content {
+    padding: 12px 15px;
+    max-width: none; /* Remove max-width constraint */
+    margin: 0; /* Remove auto centering */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Make sure hamburger is visible and properly sized */
+  .nav-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  /* Simple hover effect */
+  .nav-hamburger:hover {
+    background: rgba(102, 126, 234, 0.2);
+    color: #667eea;
+  }
+
+  /* Active state when menu is open */
+  .nav-hamburger.active {
+    background: rgba(102, 126, 234, 0.2);
+    color: #667eea;
+  }
+
+  /* Make sure title doesn't overlap hamburger */
+  .title {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+
+  /* Mobile adjustments for new sections */
+  .project-description {
+    padding: 25px;
+    margin: 40px 0;
+  }
+
+  .project-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-description p {
+    font-size: 1rem;
+  }
+
+  .resources-btn-main {
+    padding: 14px 32px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .github-link {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .main-content {
+    padding: 30px 15px;
+  }
+
+  .header-controls {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* MOBILE OVERFLOW FIXES */
+  html,
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Fix for main content area */
+  .main-content {
+    width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+  }
+
+  /* Fix project description width */
+  .project-description {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Fix mobile nav dropdowns */
+  .mobile-nav {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .mobile-nav-links {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Fix dropdown content width */
+  .mobile-nav .dropdown-content-modern {
+    width: calc(100% - 30px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Ensure welcome section fits */
+  .welcome-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Fix for any potential overflowing text */
+  .welcome-section h1,
+  .welcome-section p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Ensure buttons don't cause overflow */
+  .resources-btn-main {
+    max-width: calc(100vw - 30px);
+    width: auto;
+    display: inline-block;
+  }
+
+  /* Fix GitHub link button */
+  .github-link {
+    max-width: calc(100vw - 30px);
+    box-sizing: border-box;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+  .welcome-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-description {
+    padding: 20px;
+  }
+
+  .header-content {
+    padding: 10px 12px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .nav-hamburger {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+
+  .resources-btn-main {
+    padding: 12px 24px;
+  }
+
+  /* Extra small screens overflow fixes */
+  .project-description {
+    padding: 20px 12px;
+    width: calc(100vw - 24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.6rem;
+    padding: 0 5px;
+  }
+
+  .welcome-section p {
+    padding: 0 5px;
+  }
+
+  /* Force no horizontal scroll */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Desktop styles - KEEP TITLE ON LEFT */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none !important;
+  }
+
+  /* Reset any mobile styles that might affect desktop */
+  .header-content {
+    max-width: 1200px; /* Keep for desktop */
+    margin: 0 auto; /* Keep for desktop */
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .title {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove transform */
+    text-align: left; /* Keep left aligned */
+    flex-shrink: 0;
+  }
+
+  /* Make sure desktop nav is visible */
+  .desktop-nav {
+    display: flex;
+  }
+
+  /* Hide hamburger on desktop */
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .nav-hamburger,
+  .resources-btn-section,
+  .github-link {
+    display: none;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .project-description {
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+}
