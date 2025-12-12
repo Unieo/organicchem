@@ -1,0 +1,59 @@
+{
+  "title": "Amines",
+  "subtitle": "Nitrogen compounds derived from ammonia",
+  "color": "#a29bfe",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "By Alkyl Groups", "id": "by-alkyl" },
+        { "title": "By Nature", "id": "by-nature" },
+        { "title": "Natural Sources", "id": "by-sources" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties",
+      "sections": [{ "title": "Basicity", "id": "basicity" }]
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Alkylation", "id": "alkylation" },
+        { "title": "Reduction of Nitro", "id": "reduction-nitro" },
+        { "title": "Reduction of Nitrile", "id": "reduction-nitrile" },
+        { "title": "Reduction of Amide", "id": "reduction-amide" },
+        { "title": "Hofmann Rearrangement", "id": "hofmann-rearrangement" },
+        { "title": "Gabriel Synthesis", "id": "gabriel-phthalimide" },
+        { "title": "Reductive Amination", "id": "reductive-amination" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Basic Reactions", "id": "basic-reactions" },
+        { "title": "Acylation", "id": "acylation" },
+        { "title": "Carbylamine Reaction", "id": "carbylamine" },
+        { "title": "Nitrous Acid Reactions", "id": "nitrous-acid" },
+        { "title": "Diazonium Salts", "id": "diazonium" },
+        { "title": "Oxidation", "id": "oxidation" },
+        { "title": "Mustard Oil Reaction", "id": "mustard-oil" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

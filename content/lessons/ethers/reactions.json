@@ -1,0 +1,143 @@
+{
+  "lesson": "Ethers",
+  "color": "#fdcb6e",
+  "reactions": [
+    {
+      "id": "williamson-synthesis",
+      "title": "Williamson Ether Synthesis",
+      "type": "nucleophilic-substitution",
+      "reactants": [
+        { "formula": "CH₃-CH₂-O⁻Na⁺", "name": "Sodium ethoxide" },
+        { "formula": "CH₃-CH₂-CH₂-Br", "name": "1-Bromopropane" }
+      ],
+      "products": [
+        {
+          "formula": "CH₃-CH₂-O-CH₂-CH₂-CH₃",
+          "name": "Ethyl propyl ether",
+          "yield": "85%"
+        },
+        { "formula": "NaBr", "name": "Sodium bromide" }
+      ],
+      "arrow": "→",
+      "conditions": "Dry ethanol, reflux, SN2 mechanism",
+      "mechanism": "Alkoxide attacks primary alkyl halide",
+      "notes": "Classic method for unsymmetrical ethers. Use primary halides to avoid elimination.",
+      "difficulty": "easy",
+      "applications": ["Ether synthesis", "SN2 mechanism demonstration"]
+    },
+    {
+      "id": "acid-cleavage-hi",
+      "title": "Acid Cleavage with HI",
+      "type": "acid-catalyzed",
+      "reactants": [
+        { "formula": "CH₃-O-C₂H₅", "name": "Methyl ethyl ether" },
+        { "formula": "2HI", "name": "Hydroiodic acid (excess)" }
+      ],
+      "products": [
+        { "formula": "CH₃-I", "name": "Methyl iodide" },
+        { "formula": "C₂H₅-I", "name": "Ethyl iodide" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Excess concentrated HI, heat",
+      "mechanism": "Protonation followed by SN2 attack (both primary groups)",
+      "notes": "Complete cleavage to two alkyl iodides. Reactivity: HI > HBr > HCl.",
+      "difficulty": "intermediate",
+      "applications": ["Ether cleavage", "Alkyl iodide preparation"]
+    },
+    {
+      "id": "claisen-rearrangement",
+      "title": "Claisen Rearrangement",
+      "type": "sigmatropic",
+      "reactants": [
+        { "formula": "CH₂=CH-CH₂-O-C₆H₅", "name": "Allyl phenyl ether" }
+      ],
+      "products": [
+        {
+          "formula": "OH-C₆H₄-CH₂-CH=CH₂",
+          "name": "2-Allylphenol",
+          "yield": "80%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "200°C, neat or high-boiling solvent",
+      "mechanism": "[3,3]-Sigmatropic rearrangement via cyclic transition state",
+      "notes": "Intramolecular, stereospecific. If ortho positions are blocked, goes to para position (Cope rearrangement).",
+      "difficulty": "advanced",
+      "applications": ["Phenol synthesis", "Pericyclic reaction study"]
+    },
+    {
+      "id": "crown-complexation",
+      "title": "Crown Ether-Potassium Complex",
+      "type": "host-guest",
+      "reactants": [
+        { "formula": "18-crown-6", "name": "18-Crown-6 ether" },
+        { "formula": "K⁺", "name": "Potassium ion" }
+      ],
+      "products": [
+        {
+          "formula": "[18-crown-6·K]⁺",
+          "name": "Potassium-crown complex",
+          "stability": "High"
+        }
+      ],
+      "arrow": "⇌",
+      "conditions": "Organic solvent, room temperature",
+      "mechanism": "Ion-dipole interactions, size selectivity",
+      "notes": "18-crown-6 perfectly fits K⁺ ion (cavity diameter ~2.6-3.2 Å, K⁺ diameter 2.66 Å). Enhances solubility of potassium salts in organic solvents.",
+      "difficulty": "intermediate",
+      "applications": ["Phase transfer catalysis", "Ion transport studies"]
+    }
+  ],
+  "importantEthers": [
+    {
+      "name": "Diethyl Ether",
+      "formula": "(C₂H₅)₂O",
+      "bp": "34.6°C",
+      "uses": "Solvent, former anesthetic, starting material",
+      "properties": "Highly flammable, forms explosive peroxides"
+    },
+    {
+      "name": "Tetrahydrofuran (THF)",
+      "formula": "(CH₂)₄O",
+      "bp": "66°C",
+      "uses": "Polymer solvent, Grignard reactions, lithium reactions",
+      "properties": "Miscible with water, forms peroxides"
+    },
+    {
+      "name": "1,4-Dioxane",
+      "formula": "C₄H₈O₂",
+      "bp": "101°C",
+      "uses": "Solvent for aqueous and organic mixtures",
+      "properties": "Carcinogenic, forms peroxides, miscible with water"
+    },
+    {
+      "name": "Anisole",
+      "formula": "C₆H₅OCH₃",
+      "bp": "154°C",
+      "uses": "Perfumes, solvent, precursor to other compounds",
+      "properties": "Aromatic ether, pleasant odor"
+    },
+    {
+      "name": "MTBE",
+      "formula": "(CH₃)₃COCH₃",
+      "bp": "55°C",
+      "uses": "Former gasoline additive (oxygenate)",
+      "properties": "Groundwater contaminant, phased out in many areas"
+    }
+  ],
+  "safetyTests": [
+    {
+      "test": "Peroxide Test (Starch-Iodide)",
+      "procedure": "Add 1 mL ether to 1 mL 10% KI solution + few drops dilute HCl",
+      "positive": "Yellow to brown color indicates peroxides",
+      "action": "Do not distill! Treat with reducing agents (FeSO₄, Na₂SO₃)"
+    },
+    {
+      "test": "Peroxide Test (Ferrous Thiocyanate)",
+      "procedure": "Mix ether with FeSO₄ and KCNS solutions",
+      "positive": "Red color indicates peroxides",
+      "action": "Same as above - treat before use"
+    }
+  ]
+}

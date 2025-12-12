@@ -1,0 +1,117 @@
+/* current file location: ./assets/css/base/_variables.css */
+
+:root {
+  /* Font Families */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "Source Serif Pro", Georgia, serif;
+  --font-mono: "Source Code Pro", "Courier New", monospace;
+  --font-chemistry: "Cambria Math", "Times New Roman", serif;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Colors - Light Theme Default */
+  --primary-gradient: linear-gradient(135deg, #667eea, #764ba2);
+  --bg-color: #ffffff;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --card-bg: #f8f9fa;
+  --text-color: #2c3e50;
+  --text-muted: #7f8c8d;
+  --border-color: #e9ecef;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Chapter-specific colors */
+  --haloalkanes: #ff6b6b;
+  --haloarenes: #a29bfe;
+  --alcohols: #00cec9;
+  --phenols: #fd79a8;
+  --ethers: #fdcb6e;
+  --aldehydes: #74b9ff;
+  --ketones: #55efc4;
+  --carboxylic: #e17055;
+  --amines: #a29bfe;
+
+  /* Spacing */
+  --header-padding: 20px 50px;
+  --content-padding: 80px 50px;
+  --card-padding: 30px;
+
+  /* Borders */
+  --border-radius: 8px;
+  --card-radius: 12px;
+
+  /* Shadows */
+  --header-shadow: 0 4px 30px var(--shadow-color);
+  --card-shadow: 0 15px 35px var(--shadow-color);
+  --button-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+
+  /* === BOX COLORS - Light Theme === */
+  --highlight-bg: #f8f9fa;
+  --highlight-border: #667eea;
+  --highlight-text: #2c3e50;
+
+  --note-bg: #d4edda;
+  --note-border: #28a745;
+  --note-text: #155724;
+
+  --reaction-bg: #fff3cd;
+  --reaction-border: #ffc107;
+  --reaction-text: #856404;
+  --reaction-scheme-bg: rgba(255, 255, 255, 0.7);
+  --reaction-conditions-bg: rgba(255, 255, 255, 0.5);
+
+  --conditions-bg: #e8f4fd;
+  --conditions-border: #3498db;
+  --conditions-text: #0c5460;
+
+  --chemical-formula-bg: rgba(102, 126, 234, 0.1);
+  --chemical-formula-text: #2c3e50;
+
+  /* Box text colors */
+  --box-text-color: #333;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+  --bg-color: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  --header-bg: rgba(15, 15, 25, 0.95);
+  --card-bg: rgba(30, 30, 45, 0.7);
+  --text-color: #e0e0e0;
+  --text-muted: #b0b0b0;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+
+  /* === BOX COLORS - Dark Theme === */
+  --highlight-bg: #1e1e3a;
+  --highlight-border: #5a67d8;
+  --highlight-text: #e0e0e0;
+
+  --note-bg: #0f2a1a;
+  --note-border: #1a5332;
+  --note-text: #a3d9b1;
+
+  --reaction-bg: #332701;
+  --reaction-border: #b58900;
+  --reaction-text: #f6e05e;
+  --reaction-scheme-bg: rgba(30, 30, 45, 0.5);
+  --reaction-conditions-bg: rgba(30, 30, 45, 0.3);
+
+  --conditions-bg: #06232d;
+  --conditions-border: #0a5460;
+  --conditions-text: #a3d7e6;
+
+  --chemical-formula-bg: rgba(90, 103, 216, 0.2);
+  --chemical-formula-text: #cbd5e0;
+
+  /* Box text colors */
+  --box-text-color: #e0e0e0;
+}

@@ -1,0 +1,29 @@
+<!-- content/partials/reaction-scheme.html -->
+<div
+  class="reaction-scheme"
+  data-reaction="{{reaction}}"
+  data-conditions="{{conditions}}"
+>
+  <div class="reaction-header">
+    <h3>{{title}}</h3>
+    <span class="reaction-type">{{type}}</span>
+  </div>
+
+  <div class="reaction-equation">
+    <!-- Will be populated by reaction-renderer.js -->
+  </div>
+
+  <div class="reaction-details">
+    {{#if mechanism}}
+    <div class="reaction-mechanism">
+      <h4>Mechanism</h4>
+      <p>{{mechanism}}</p>
+    </div>
+    {{/if}} {{#if notes}}
+    <div class="reaction-notes">
+      <h4>Notes</h4>
+      <p>{{notes}}</p>
+    </div>
+    {{/if}}
+  </div>
+</div>

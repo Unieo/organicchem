@@ -1,0 +1,20 @@
+title: "Organic Chemistry Resources"
+description: "Open-source organic chemistry learning platform"
+baseurl: "/organicchem"
+url: "https://unieo.github.io"
+
+# GitHub Pages settings
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+
+# SPA support
+include: [404.html]
+exclude: ["node_modules", "scripts", "package.json"]
+
+# Custom 404 for SPA
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+highlighter: rouge

@@ -1,0 +1,142 @@
+{
+  "lesson": "HaloAlkanes",
+  "color": "#ff6b6b",
+  "reactions": [
+    {
+      "id": "sn2-hydrolysis",
+      "title": "SN2 Hydrolysis of 1-Bromobutane",
+      "type": "nucleophilic-substitution",
+      "reactants": [
+        { "formula": "CH₃(CH₂)₃-Br", "name": "1-Bromobutane" },
+        { "formula": "OH⁻", "name": "Hydroxide ion" }
+      ],
+      "products": [
+        { "formula": "CH₃(CH₂)₃-OH", "name": "Butan-1-ol", "yield": "85%" },
+        { "formula": "Br⁻", "name": "Bromide ion" }
+      ],
+      "arrow": "→",
+      "conditions": "Aqueous NaOH, reflux, SN2 mechanism",
+      "mechanism": "Backside attack with inversion of configuration",
+      "notes": "Classic SN2 reaction - primary halide, strong nucleophile",
+      "difficulty": "easy",
+      "applications": ["Alcohol synthesis", "Mechanism demonstration"]
+    },
+    {
+      "id": "sn1-solvolysis",
+      "title": "SN1 Solvolysis of tert-Butyl Chloride",
+      "type": "nucleophilic-substitution",
+      "reactants": [
+        { "formula": "(CH₃)₃C-Cl", "name": "tert-Butyl chloride" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "products": [
+        {
+          "formula": "(CH₃)₃C-OH",
+          "name": "tert-Butyl alcohol",
+          "yield": "90%"
+        },
+        { "formula": "HCl", "name": "Hydrochloric acid" }
+      ],
+      "arrow": "→",
+      "conditions": "Aqueous ethanol, room temperature, SN1 mechanism",
+      "mechanism": "Carbocation intermediate, then nucleophile attack",
+      "notes": "Classic SN1 reaction - tertiary halide, weak nucleophile",
+      "difficulty": "easy",
+      "applications": ["Alcohol synthesis", "Rate studies"]
+    },
+    {
+      "id": "e2-elimination",
+      "title": "E2 Elimination of 2-Bromobutane",
+      "type": "elimination",
+      "reactants": [
+        { "formula": "CH₃-CH₂-CHBr-CH₃", "name": "2-Bromobutane" },
+        { "formula": "OH⁻", "name": "Hydroxide ion" }
+      ],
+      "products": [
+        {
+          "formula": "CH₃-CH=CH-CH₃",
+          "name": "But-2-ene (major)",
+          "yield": "80%"
+        },
+        {
+          "formula": "CH₃-CH₂-CH=CH₂",
+          "name": "But-1-ene (minor)",
+          "yield": "20%"
+        },
+        { "formula": "Br⁻", "name": "Bromide ion" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Alcoholic KOH, heat, E2 mechanism",
+      "mechanism": "Anti-periplanar elimination, Zaitsev product major",
+      "notes": "Follows Saytzeff rule - more substituted alkene is major",
+      "difficulty": "intermediate",
+      "applications": ["Alkene synthesis", "Stereochemistry study"]
+    },
+    {
+      "id": "finkelstein-reaction",
+      "title": "Finkelstein Reaction (Halogen Exchange)",
+      "type": "nucleophilic-substitution",
+      "reactants": [
+        { "formula": "CH₃(CH₂)₃-Cl", "name": "1-Chlorobutane" },
+        { "formula": "NaI", "name": "Sodium iodide" }
+      ],
+      "products": [
+        { "formula": "CH₃(CH₂)₃-I", "name": "1-Iodobutane", "yield": "95%" },
+        { "formula": "NaCl", "name": "Sodium chloride" }
+      ],
+      "arrow": "→",
+      "conditions": "Acetone solvent, reflux",
+      "mechanism": "SN2 displacement driven by NaCl precipitation",
+      "notes": "NaCl insoluble in acetone, drives equilibrium to products",
+      "difficulty": "easy",
+      "applications": ["Iodoalkane synthesis", "Halogen exchange"]
+    }
+  ],
+  "mechanismComparisons": [
+    {
+      "mechanism": "SN1",
+      "molecularity": "Unimolecular",
+      "rateLaw": "Rate = k[RX]",
+      "intermediate": "Carbocation",
+      "stereochemistry": "Racemization",
+      "rearrangement": "Possible",
+      "substrate": "3° > 2°",
+      "nucleophile": "Weak",
+      "solvent": "Polar protic"
+    },
+    {
+      "mechanism": "SN2",
+      "molecularity": "Bimolecular",
+      "rateLaw": "Rate = k[RX][Nu]",
+      "intermediate": "Transition state",
+      "stereochemistry": "Inversion",
+      "rearrangement": "Not possible",
+      "substrate": "1° > 2° > 3°",
+      "nucleophile": "Strong",
+      "solvent": "Polar aprotic"
+    },
+    {
+      "mechanism": "E1",
+      "molecularity": "Unimolecular",
+      "rateLaw": "Rate = k[RX]",
+      "intermediate": "Carbocation",
+      "orientation": "Zaitsev (thermodynamic)",
+      "stereochemistry": "Not specific",
+      "substrate": "3° > 2°",
+      "base": "Weak",
+      "competesWith": "SN1"
+    },
+    {
+      "mechanism": "E2",
+      "molecularity": "Bimolecular",
+      "rateLaw": "Rate = k[RX][Base]",
+      "intermediate": "None",
+      "orientation": "Zaitsev (usually)",
+      "stereochemistry": "Anti-periplanar",
+      "substrate": "All, but 1° prefer",
+      "base": "Strong",
+      "competesWith": "SN2"
+    }
+  ]
+}

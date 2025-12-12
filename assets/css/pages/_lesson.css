@@ -1,0 +1,47 @@
+/* current file location: ./assets/css/pages/_lesson.css */
+
+/* Lesson-specific styles */
+.lesson-page .content-area {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lesson-toc {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 4px solid var(--highlight-border);
+}
+
+.learning-objectives {
+  display: grid;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.objective-item i {
+  color: var(--note-border);
+  margin-top: 3px;
+}
+
+/* Practice problems toggle */
+.solution-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.solution-toggle:hover {
+  background: rgba(102, 126, 234, 0.1);
+}

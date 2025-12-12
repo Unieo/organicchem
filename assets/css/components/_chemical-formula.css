@@ -1,0 +1,59 @@
+/* current file location: ./assets/css/components/_chemical-formula.css */
+
+.chemical-formula {
+  font-family: "Cambria Math", "Times New Roman", serif;
+  font-style: italic;
+  color: currentColor !important; /* Use currentColor instead of inherit */
+  padding: 0 2px;
+}
+
+/* SPECIFIC BOX OVERRIDES */
+.highlight-box .chemical-formula {
+  color: var(--highlight-text) !important;
+}
+
+.note-box .chemical-formula {
+  color: var(--note-text) !important;
+}
+
+.reaction-box .chemical-formula {
+  color: var(--reaction-text) !important;
+}
+
+.conditions-box .chemical-formula {
+  color: var(--conditions-text) !important;
+}
+
+/* Also target formulas inside section content */
+.section-content .chemical-formula {
+  color: var(--text-color) !important;
+}
+
+.subscript,
+.superscript {
+  font-size: 0.75em;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.subscript {
+  bottom: -0.25em;
+}
+.superscript {
+  top: -0.5em;
+}
+
+.reaction-arrow {
+  font-size: 1.2em;
+  margin: 0 10px;
+  color: inherit;
+}
+
+.chemical-structure {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background: var(--structure-bg, #f8f9fa);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}

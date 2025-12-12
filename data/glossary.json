@@ -1,0 +1,30 @@
+{
+  "terms": [
+    {
+      "term": "Alcohol",
+      "definition": "An organic compound containing a hydroxyl (-OH) functional group.",
+      "formula": "R-OH",
+      "category": "Functional Groups",
+      "example": "Ethanol (CH₃CH₂OH)"
+    },
+    {
+      "term": "Aldehyde",
+      "definition": "An organic compound containing a carbonyl group (C=O) with at least one hydrogen atom attached to the carbonyl carbon.",
+      "formula": "R-CHO",
+      "category": "Functional Groups",
+      "example": "Formaldehyde (HCHO)"
+    },
+    {
+      "term": "Electrophile",
+      "definition": "An electron-deficient species that accepts an electron pair in a chemical reaction.",
+      "category": "Reaction Mechanisms",
+      "example": "H⁺, NO₂⁺"
+    }
+  ],
+  "categories": [
+    "Functional Groups",
+    "Reaction Mechanisms",
+    "Stereochemistry",
+    "Spectroscopy"
+  ]
+}

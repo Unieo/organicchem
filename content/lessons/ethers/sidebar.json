@@ -1,0 +1,57 @@
+{
+  "title": "Ethers",
+  "subtitle": "Organic compounds with C-O-C linkage",
+  "color": "#fdcb6e",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "Based on Attached Groups", "id": "based-on-groups" },
+        { "title": "Cyclic Ethers", "id": "cyclic-ethers" },
+        { "title": "Crown Ethers", "id": "crown-ethers" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Williamson Synthesis", "id": "williamson-synthesis" },
+        { "title": "Dehydration of Alcohols", "id": "dehydration-alcohols" },
+        { "title": "Alkoxymercuration", "id": "alkoxymercuration" },
+        { "title": "From Diazomethane", "id": "from-diazo" },
+        { "title": "Ullmann Condensation", "id": "ullmann-condensation" },
+        { "title": "From Epoxides", "id": "from-epoxides" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Cleavage by Acids", "id": "cleavage-acids" },
+        { "title": "Peroxide Formation", "id": "peroxide-formation" },
+        { "title": "Complex Formation", "id": "complex-formation" },
+        { "title": "Formation of Epoxides", "id": "epoxidation" },
+        { "title": "Claisen Rearrangement", "id": "claisen-rearrangement" },
+        { "title": "Oxidation Reactions", "id": "oxidation" },
+        { "title": "Crown Ether Complexes", "id": "crown-complexes" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

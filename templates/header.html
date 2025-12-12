@@ -1,0 +1,141 @@
+<!-- templates/header.html -->
+<header class="header">
+  <div class="header-content">
+    <div class="title">
+      <a href="/" data-link>Organic Chem Online Resources</a>
+    </div>
+    <div class="header-controls">
+      <nav class="desktop-nav">
+        <a href="/" data-link class="nav-link">Home</a>
+
+        <!-- SIMPLE HOVER DROPDOWN - NO JAVASCRIPT NEEDED -->
+        <div class="dropdown-modern">
+          <button class="dropbtn-modern">
+            <i class="fas fa-book"></i>
+            Resources
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="dropdown-content-modern">
+            <a href="/lessons/haloalkanes" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--haloalkanes)"
+              ></span>
+              HaloAlkanes
+            </a>
+            <a href="/lessons/haloarenes" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--haloarenes)"
+              ></span>
+              HaloArenes
+            </a>
+            <a href="/lessons/alcohols" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--alcohols)"
+              ></span>
+              Alcohols
+            </a>
+            <a href="/lessons/phenols" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--phenols)"
+              ></span>
+              Phenols
+            </a>
+            <a href="/lessons/ethers" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--ethers)"
+              ></span>
+              Ethers
+            </a>
+            <a href="/lessons/aldehydes" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--aldehydes)"
+              ></span>
+              Aldehydes
+            </a>
+            <a href="/lessons/ketones" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--ketones)"
+              ></span>
+              Ketones
+            </a>
+            <a href="/lessons/carboxylicacids" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--carboxylic)"
+              ></span>
+              Carboxylic Acids
+            </a>
+            <a href="/lessons/amines" data-link>
+              <span
+                class="chapter-dot"
+                style="background: var(--amines)"
+              ></span>
+              Amines
+            </a>
+          </div>
+        </div>
+
+        <a href="/contact" data-link class="nav-link">Contact</a>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <i class="fas fa-sun"></i>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const themeToggle = document.getElementById("theme-toggle");
+    if (!themeToggle) return;
+
+    const icon = themeToggle.querySelector("i");
+
+    // ===== 1. SET CORRECT ICON IMMEDIATELY =====
+    // Use pre-set icon from index.html, or determine from current theme
+    if (window.initialThemeIcon) {
+      // Use icon set by index.html before page render
+      icon.className = window.initialThemeIcon;
+    } else {
+      // Fallback: determine from current theme
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      icon.className = currentTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+    }
+
+    // ===== 2. SET ARIA LABEL =====
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    themeToggle.setAttribute(
+      "aria-label",
+      currentTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+    );
+
+    // ===== 3. TOGGLE FUNCTION =====
+    themeToggle.addEventListener("click", function () {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+      // Update theme
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+
+      // Update icon
+      icon.className = newTheme === "dark" ? "fas fa-sun" : "fas fa-moon";
+      this.setAttribute(
+        "aria-label",
+        newTheme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+      );
+    });
+  });
+</script>

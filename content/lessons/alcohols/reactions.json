@@ -1,0 +1,168 @@
+{
+  "lesson": "Alcohols",
+  "color": "#00cec9",
+  "reactions": [
+    {
+      "id": "oxidation-primary-to-aldehyde",
+      "title": "Primary Alcohol to Aldehyde",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "CH₃CH₂OH", "name": "Ethanol", "role": "alcohol" }
+      ],
+      "products": [
+        { "formula": "CH₃CHO", "name": "Acetaldehyde", "yield": "85%" },
+        { "formula": "H₂O", "name": "Water", "role": "byproduct" }
+      ],
+      "arrow": "→",
+      "conditions": "K₂Cr₂O₇/H₂SO₄, heat, distillation",
+      "mechanism": "Oxidation via chromate ester intermediate",
+      "notes": "Distill off aldehyde immediately to prevent over-oxidation",
+      "difficulty": "intermediate",
+      "applications": ["Aldehyde synthesis", "Perfume industry"]
+    },
+    {
+      "id": "oxidation-primary-to-acid",
+      "title": "Primary Alcohol to Carboxylic Acid",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "CH₃CH₂OH", "name": "Ethanol", "role": "alcohol" },
+        { "formula": "[O]", "name": "Oxidizing agent", "role": "oxidant" }
+      ],
+      "products": [
+        { "formula": "CH₃COOH", "name": "Acetic acid", "yield": "90%" },
+        { "formula": "H₂O", "name": "Water", "role": "byproduct" }
+      ],
+      "arrow": "→",
+      "conditions": "KMnO₄ or K₂Cr₂O₇/H₂SO₄, reflux",
+      "mechanism": "Two-step oxidation via aldehyde intermediate",
+      "notes": "Reflux conditions allow complete oxidation to acid",
+      "difficulty": "easy",
+      "applications": ["Vinegar production", "Ester synthesis"]
+    },
+    {
+      "id": "dehydration-to-alkene",
+      "title": "Alcohol Dehydration to Alkene",
+      "type": "dehydration",
+      "reactants": [
+        { "formula": "CH₃CH₂CH₂OH", "name": "Propanol", "role": "alcohol" }
+      ],
+      "products": [
+        { "formula": "CH₃CH=CH₂", "name": "Propene", "yield": "80%" },
+        { "formula": "H₂O", "name": "Water", "role": "byproduct" }
+      ],
+      "arrow": "→",
+      "conditions": "Conc. H₂SO₄, 170°C",
+      "mechanism": "E1 elimination via carbocation intermediate",
+      "notes": "Follows Saytzeff's rule (more substituted alkene formed)",
+      "difficulty": "intermediate",
+      "applications": ["Petrochemical industry", "Polymer production"]
+    },
+    {
+      "id": "esterification-fischer",
+      "title": "Fischer Esterification",
+      "type": "esterification",
+      "reactants": [
+        { "formula": "R-COOH", "name": "Carboxylic acid", "role": "acid" },
+        { "formula": "R'-OH", "name": "Alcohol", "role": "alcohol" }
+      ],
+      "products": [
+        { "formula": "R-COO-R'", "name": "Ester", "yield": "60-70%" },
+        { "formula": "H₂O", "name": "Water", "role": "byproduct" }
+      ],
+      "arrow": "⇌",
+      "conditions": "H⁺ catalyst (H₂SO₄), heat, reversible",
+      "mechanism": "Nucleophilic acyl substitution",
+      "notes": "Equilibrium reaction, use excess alcohol or remove water",
+      "difficulty": "easy",
+      "applications": ["Perfumes", "Flavors", "Plasticizers"]
+    },
+    {
+      "id": "haloform-reaction",
+      "title": "Haloform Reaction",
+      "type": "oxidative-halogenation",
+      "reactants": [
+        { "formula": "CH₃CH₂OH", "name": "Ethanol", "role": "alcohol" },
+        { "formula": "I₂", "name": "Iodine", "role": "halogen" },
+        { "formula": "NaOH", "name": "Sodium hydroxide", "role": "base" }
+      ],
+      "products": [
+        { "formula": "CHI₃", "name": "Iodoform", "yield": "75%" },
+        { "formula": "HCOONa", "name": "Sodium formate" },
+        { "formula": "NaI", "name": "Sodium iodide" }
+      ],
+      "arrow": "→",
+      "conditions": "I₂ in NaOH, warm, characteristic yellow precipitate",
+      "mechanism": "Oxidation to carbonyl followed by halogenation",
+      "notes": "Test for CH₃CH(OH)- or CH₃CO- groups",
+      "difficulty": "intermediate",
+      "applications": ["Qualitative test", "Iodoform synthesis"]
+    },
+    {
+      "id": "williamson-ether",
+      "title": "Williamson Ether Synthesis",
+      "type": "substitution",
+      "reactants": [
+        {
+          "formula": "R-ONa",
+          "name": "Sodium alkoxide",
+          "role": "nucleophile"
+        },
+        { "formula": "R'-X", "name": "Alkyl halide", "role": "electrophile" }
+      ],
+      "products": [
+        { "formula": "R-O-R'", "name": "Ether", "yield": "85%" },
+        { "formula": "NaX", "name": "Sodium halide", "role": "byproduct" }
+      ],
+      "arrow": "→",
+      "conditions": "Dry conditions, SN₂ mechanism",
+      "mechanism": "Bimolecular nucleophilic substitution (SN₂)",
+      "notes": "Use primary alkyl halides to avoid elimination",
+      "difficulty": "easy",
+      "applications": ["Ether synthesis", "Anesthesia (diethyl ether)"]
+    }
+  ],
+
+  "reactionGroups": {
+    "oxidation": {
+      "name": "Oxidation Reactions",
+      "description": "Alcohols can be oxidized to aldehydes, ketones, or carboxylic acids",
+      "icon": "⚗️"
+    },
+    "dehydration": {
+      "name": "Dehydration Reactions",
+      "description": "Loss of water molecule to form alkenes",
+      "icon": "🔥"
+    },
+    "esterification": {
+      "name": "Esterification",
+      "description": "Formation of esters from alcohols and carboxylic acids",
+      "icon": "🍯"
+    },
+    "substitution": {
+      "name": "Substitution Reactions",
+      "description": "Replacement of -OH group with other functional groups",
+      "icon": "🔄"
+    }
+  },
+
+  "oxidizingAgents": [
+    {
+      "name": "Potassium dichromate (K₂Cr₂O₇)",
+      "strength": "strong",
+      "use": "Primary → Carboxylic acids, Secondary → Ketones",
+      "colorChange": "Orange to green"
+    },
+    {
+      "name": "Pyridinium chlorochromate (PCC)",
+      "strength": "mild",
+      "use": "Primary → Aldehydes (stops at aldehyde)",
+      "colorChange": "Orange to green"
+    },
+    {
+      "name": "Potassium permanganate (KMnO₄)",
+      "strength": "strong",
+      "use": "Complete oxidation to acids",
+      "colorChange": "Purple to colorless/brown"
+    }
+  ]
+}

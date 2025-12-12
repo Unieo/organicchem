@@ -1,0 +1,54 @@
+{
+  "title": "Alcohols",
+  "subtitle": "Organic compounds with -OH group",
+  "color": "#00cec9",
+  "navigation": {
+    "previous": "/lessons/haloalkanes",
+    "next": "/lessons/phenols"
+  },
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "By -OH Groups", "id": "by-oh-groups" },
+        { "title": "By Carbon Type", "id": "by-carbon-type" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Hydration of Alkenes", "id": "hydration" },
+        { "title": "Reduction of Carbonyls", "id": "reduction" },
+        { "title": "Grignard Reaction", "id": "grignard" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Oxidation", "id": "oxidation" },
+        { "title": "Dehydration", "id": "dehydration" },
+        { "title": "Esterification", "id": "esterification" },
+        { "title": "Haloform Reaction", "id": "haloform" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

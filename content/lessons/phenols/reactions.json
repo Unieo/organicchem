@@ -1,0 +1,83 @@
+{
+  "lesson": "Phenols",
+  "color": "#fd79a8",
+  "reactions": [
+    {
+      "id": "bromination-test",
+      "title": "Bromine Water Test for Phenol",
+      "type": "halogenation",
+      "reactants": [
+        { "formula": "C₆H₅-OH", "name": "Phenol" },
+        { "formula": "Br₂", "name": "Bromine water" }
+      ],
+      "products": [
+        { "formula": "C₆H₂Br₃-OH", "name": "2,4,6-Tribromophenol" },
+        { "formula": "3HBr", "name": "Hydrogen bromide" }
+      ],
+      "arrow": "→",
+      "conditions": "Aqueous bromine at room temperature",
+      "mechanism": "Electrophilic aromatic substitution",
+      "notes": "Instantaneous white precipitate - qualitative test for phenol",
+      "difficulty": "easy",
+      "applications": ["Qualitative analysis", "Phenol detection"]
+    },
+    {
+      "id": "cumene-process",
+      "title": "Cumene Process for Phenol",
+      "type": "industrial",
+      "reactants": [
+        { "formula": "C₆H₅-CH(CH₃)₂", "name": "Cumene" },
+        { "formula": "O₂", "name": "Oxygen" }
+      ],
+      "products": [
+        { "formula": "C₆H₅-OH", "name": "Phenol", "yield": "95%" },
+        { "formula": "CH₃COCH₃", "name": "Acetone", "yield": "95%" }
+      ],
+      "arrow": "→",
+      "conditions": "Air oxidation followed by acid-catalyzed rearrangement",
+      "mechanism": "Radical chain oxidation, carbocation rearrangement",
+      "notes": "Most important industrial method - produces both phenol and acetone",
+      "difficulty": "industrial",
+      "applications": ["Industrial production", "Bulk chemical synthesis"]
+    },
+    {
+      "id": "azo-coupling",
+      "title": "Azo Coupling for Dyes",
+      "type": "diazotization",
+      "reactants": [
+        { "formula": "C₆H₅-OH", "name": "Phenol" },
+        { "formula": "Ar-N₂⁺", "name": "Diazonium salt" }
+      ],
+      "products": [
+        { "formula": "Ar-N=N-C₆H₄-OH", "name": "Azo dye" },
+        { "formula": "H⁺", "name": "Acid" }
+      ],
+      "arrow": "→",
+      "conditions": "Alkaline medium, low temperature (0-5°C)",
+      "mechanism": "Electrophilic aromatic substitution",
+      "notes": "Forms orange/red dyes - important for textile industry",
+      "difficulty": "intermediate",
+      "applications": ["Dye synthesis", "pH indicators"]
+    }
+  ],
+  "importantTests": [
+    {
+      "name": "Ferric Chloride Test",
+      "reagents": "1% FeCl₃ solution",
+      "observation": "Violet/blue/green coloration",
+      "principle": "Formation of colored iron-phenol complexes"
+    },
+    {
+      "name": "Bromine Water Test",
+      "reagents": "Bromine water",
+      "observation": "White precipitate of tribromophenol",
+      "principle": "Electrophilic bromination"
+    },
+    {
+      "name": "Phthalein Test",
+      "reagents": "Phthalic anhydride + conc. H₂SO₄",
+      "observation": "Phenolphthalein formation (pink in alkali)",
+      "principle": "Condensation reaction"
+    }
+  ]
+}

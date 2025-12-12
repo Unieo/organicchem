@@ -1,0 +1,74 @@
+{
+  "title": "Carboxylic Acids",
+  "subtitle": "Organic acids with -COOH functional group",
+  "color": "#00b894",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature",
+      "sections": [{ "title": "Classification", "id": "classification" }]
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties",
+      "sections": [
+        { "title": "Acidity", "id": "acidity" },
+        { "title": "Spectral Properties", "id": "spectral-properties" }
+      ]
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Oxidation of Alcohols", "id": "oxidation-primary" },
+        { "title": "Oxidation of Alkenes", "id": "oxidation-alkenes" },
+        { "title": "Hydrolysis of Nitriles", "id": "hydrolysis-nitriles" },
+        { "title": "Grignard with CO₂", "id": "grignard-co2" },
+        { "title": "Malonic Ester", "id": "malonic-ester" },
+        { "title": "Kolbe-Schmitt", "id": "kolbe-schmitt" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Salt Formation", "id": "salt-formation" },
+        { "title": "Esterification", "id": "esterification" },
+        { "title": "Acid Chloride Formation", "id": "acid-chloride" },
+        { "title": "Reduction", "id": "reduction" },
+        { "title": "Decarboxylation", "id": "decarboxylation" },
+        { "title": "Halogenation", "id": "halogenation" },
+        { "title": "Special Reactions", "id": "special-reactions" }
+      ]
+    },
+    {
+      "title": "Acid Derivatives",
+      "id": "derivatives",
+      "sections": [
+        { "title": "Acid Chlorides", "id": "acid-chlorides" },
+        { "title": "Acid Anhydrides", "id": "acid-anhydrides" },
+        { "title": "Esters", "id": "esters" },
+        { "title": "Amides", "id": "amides" },
+        { "title": "Interconversions", "id": "interconversions" }
+      ]
+    },
+    {
+      "title": "Important Acids",
+      "id": "important",
+      "sections": [{ "title": "Fatty Acids", "id": "fatty-acids" }]
+    },
+    {
+      "title": "Tests and Identification",
+      "id": "tests",
+      "sections": [
+        { "title": "Acid Tests", "id": "acid-tests" },
+        { "title": "Derivative Tests", "id": "derivative-tests" },
+        { "title": "Spectral ID", "id": "spectral-identification" }
+      ]
+    }
+  ]
+}

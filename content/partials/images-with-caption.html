@@ -1,0 +1,15 @@
+<!-- content/partials/images-with-caption.html -->
+<figure class="image-container">
+  <picture>
+    <source srcset="{{webpPath}}" type="image/webp" />
+    <source srcset="{{fallbackPath}}" type="image/jpeg" />
+    <img
+      src="{{fallbackPath}}"
+      alt="{{altText}}"
+      loading="lazy"
+      width="{{width}}"
+      height="{{height}}"
+    />
+  </picture>
+  <figcaption class="image-caption">{{caption}}</figcaption>
+</figure>

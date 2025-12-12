@@ -1,0 +1,61 @@
+{
+  "title": "HaloAlkanes",
+  "subtitle": "Aliphatic halogen compounds",
+  "color": "#ff6b6b",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "Based on Carbon Atom", "id": "based-on-carbon" },
+        { "title": "Based on Halogen Number", "id": "based-on-halogen" },
+        { "title": "Special Compounds", "id": "based-on-compounds" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "From Alcohols", "id": "from-alcohols" },
+        { "title": "From Alkenes", "id": "from-alkenes" },
+        { "title": "From Alkanes", "id": "from-alkanes" },
+        { "title": "Halogen Exchange", "id": "halogen-exchange" },
+        { "title": "Hunsdiecker Reaction", "id": "from-silver-salts" },
+        { "title": "From Ethers", "id": "from-ethers" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        {
+          "title": "Nucleophilic Substitution",
+          "id": "nucleophilic-substitution"
+        },
+        { "title": "SN2 Mechanism", "id": "sn2-mechanism" },
+        { "title": "SN1 Mechanism", "id": "sn1-mechanism" },
+        { "title": "Common Reactions", "id": "common-reactions" },
+        { "title": "Elimination Reactions", "id": "elimination-reactions" },
+        { "title": "Reduction", "id": "reduction" },
+        { "title": "Wurtz Reaction", "id": "wurtz-reaction" },
+        { "title": "Grignard Reagents", "id": "grignard-reagents" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

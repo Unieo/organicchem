@@ -1,0 +1,87 @@
+* {
+  font-family: var(--font-sans);
+  font-weight: var(--font-regular);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings with chemistry-friendly weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-semibold);
+  line-height: 1.3;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Chemistry-specific typography */
+.chemical-formula,
+.reaction-scheme,
+.equation {
+  font-family: var(--font-chemistry);
+  font-style: italic;
+  font-weight: var(--font-regular);
+}
+
+/* Code and formulas */
+code,
+pre,
+.chemical-structure {
+  font-family: var(--font-mono);
+  font-weight: var(--font-medium);
+}
+
+/* Improve readability for long content */
+.section-content {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* current file location: ./assets/css/base/_typography.css */
+/* OR create new file: assets/css/base/_font-fix.css */
+
+/* ===== HEADER FONT FIX ===== */
+/* Only change font-family, preserve everything else */
+.title,
+.title a,
+.title * {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.header-content,
+.desktop-nav,
+.nav-link,
+.dropbtn-modern {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* ===== SIDEBAR FONT FIX ===== */
+.sidebar,
+.sidebar-header,
+.sidebar-title,
+.sidebar-topic,
+#lesson-title,
+#lesson-subtitle,
+.sidebar-nav,
+.sidebar-footer,
+.sidebar-toggle {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Sidebar navigation links */
+.chapter-link,
+.sub-chapter-link,
+.sidebar-nav a,
+.sidebar-nav li {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* ===== KEEP EXISTING STYLES ===== */
+/* These rules ONLY change font-family, nothing else! */

@@ -1,0 +1,66 @@
+{
+  "title": "HaloArenes",
+  "subtitle": "Aromatic halogen compounds",
+  "color": "#a29bfe",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "Based on Halogen Type", "id": "based-on-halogens" },
+        { "title": "Based on Number", "id": "based-on-number" },
+        { "title": "Based on Position", "id": "based-on-position" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Direct Halogenation", "id": "direct-halogenation" },
+        { "title": "Sandmeyer Reaction", "id": "sandmeyer" },
+        { "title": "Gattermann Reaction", "id": "gattermann" },
+        { "title": "Halex Process", "id": "halex-process" },
+        { "title": "From Phenols", "id": "from-phenols" },
+        { "title": "Ullmann Reaction", "id": "ulmann-reaction" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        {
+          "title": "Nucleophilic Substitution",
+          "id": "nucleophilic-substitution"
+        },
+        { "title": "S_NAr Mechanism", "id": "snar" },
+        { "title": "Benzyne Mechanism", "id": "benzyne-mechanism" },
+        {
+          "title": "Electrophilic Substitution",
+          "id": "electrophilic-substitution"
+        },
+        { "title": "Nitration", "id": "nitration" },
+        { "title": "Sulfonation", "id": "sulfonation" },
+        { "title": "Wurtz-Fittig", "id": "wurtz-fittig" },
+        { "title": "Fittig Reaction", "id": "fittig-reaction" },
+        { "title": "Grignard Formation", "id": "grignard-formation" },
+        { "title": "Reduction", "id": "reduction" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+/* current file location: ./assets/css/components/_dropdown.css */
+
+/* ===== SIMPLE HOVER DROPDOWN ===== */
+.dropdown-modern {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-modern {
+  background: transparent;
+  color: var(--text-color);
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropbtn-modern:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+  margin-left: 4px;
+  transition: transform var(--transition-normal);
+}
+
+/* Arrow rotates on hover */
+.dropdown-modern:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* ===== DROPDOWN MENU ===== */
+.dropdown-content-modern {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Directly below button */
+  left: 0;
+  min-width: 240px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  z-index: 1000;
+  padding: 8px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show on hover */
+.dropdown-modern:hover .dropdown-content-modern {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== DROPDOWN LINKS ===== */
+.dropdown-content-modern a {
+  color: var(--text-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition-normal);
+  font-weight: 500;
+}
+
+.dropdown-content-modern a:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  padding-left: 25px;
+}
+
+/* Chapter color dots */
+.chapter-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ===== FIX FOR GAP ISSUE ===== */
+/* Remove any gap between button and dropdown */
+.dropdown-content-modern {
+  margin-top: 0 !important;
+  border-top: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+/* Invisible bridge to prevent disappearing */
+.dropdown-modern::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  z-index: 999;
+}

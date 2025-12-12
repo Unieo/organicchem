@@ -1,0 +1,315 @@
+{
+  "lesson": "Amines",
+  "color": "#a29bfe",
+  "reactions": [
+    {
+      "id": "diazotization",
+      "title": "Diazotization of Aromatic Amines",
+      "type": "diazonium",
+      "reactants": [
+        { "formula": "Ar-NH₂", "name": "Primary aromatic amine" },
+        { "formula": "NaNO₂", "name": "Sodium nitrite" },
+        { "formula": "HCl", "name": "Hydrochloric acid" }
+      ],
+      "products": [
+        { "formula": "Ar-N₂⁺ Cl⁻", "name": "Diazonium salt" },
+        { "formula": "NaCl", "name": "Sodium chloride" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "0-5°C (ice bath), aqueous acid",
+      "mechanism": "Formation of nitrosonium ion (NO⁺) followed by nucleophilic attack",
+      "notes": "Diazonium salts are unstable above 5°C, decompose explosively",
+      "difficulty": "intermediate",
+      "applications": [
+        "Azo dye synthesis",
+        "Sandmeyer reactions",
+        "Functional group interconversion"
+      ]
+    },
+    {
+      "id": "sandmeyer-chlorination",
+      "title": "Sandmeyer Reaction - Chlorination",
+      "type": "substitution",
+      "reactants": [
+        { "formula": "Ar-N₂⁺ Cl⁻", "name": "Diazonium salt" },
+        { "formula": "CuCl", "name": "Cuprous chloride" }
+      ],
+      "products": [
+        { "formula": "Ar-Cl", "name": "Chloroarene", "yield": "70-80%" },
+        { "formula": "N₂", "name": "Nitrogen gas", "state": "gas" }
+      ],
+      "arrow": "→",
+      "conditions": "CuCl catalyst, warm",
+      "mechanism": "Free radical mechanism via aryl copper intermediate",
+      "notes": "Specific for introducing Cl; use CuBr for Br, CuCN for CN",
+      "difficulty": "intermediate",
+      "applications": [
+        "Chlorobenzene synthesis",
+        "Pharmaceutical intermediates"
+      ]
+    },
+    {
+      "id": "azo-coupling",
+      "title": "Azo Coupling Reaction",
+      "type": "electrophilic-substitution",
+      "reactants": [
+        {
+          "formula": "Ar-N₂⁺",
+          "name": "Diazonium cation",
+          "role": "electrophile"
+        },
+        { "formula": "Ar'-OH", "name": "Phenol", "role": "nucleophile" }
+      ],
+      "products": [
+        {
+          "formula": "Ar-N=N-Ar'-OH",
+          "name": "Azo dye",
+          "color": "orange/red",
+          "yield": "85%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "Weakly alkaline (pH 8-9), 0-10°C",
+      "mechanism": "Electrophilic aromatic substitution",
+      "notes": "Coupling occurs para to OH; if para occupied, then ortho",
+      "difficulty": "easy",
+      "applications": ["Textile dyes", "pH indicators", "Food coloring"]
+    },
+    {
+      "id": "carbylamine-reaction",
+      "title": "Carbylamine (Isocyanide) Reaction",
+      "type": "test",
+      "reactants": [
+        { "formula": "R-NH₂", "name": "Primary amine", "role": "amine" },
+        { "formula": "CHCl₃", "name": "Chloroform" },
+        { "formula": "KOH", "name": "Potassium hydroxide" }
+      ],
+      "products": [
+        { "formula": "R-NC", "name": "Isocyanide", "odor": "foul" },
+        { "formula": "3KCl", "name": "Potassium chloride" },
+        { "formula": "3H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Alcoholic KOH, warm",
+      "mechanism": "Formation of dichlorocarbene intermediate",
+      "notes": "Test for primary amines only; secondary and tertiary amines do not react",
+      "difficulty": "easy",
+      "applications": ["Qualitative test", "Isocyanide synthesis"]
+    },
+    {
+      "id": "hoffmann-bromamide",
+      "title": "Hofmann Bromamide Reaction",
+      "type": "rearrangement",
+      "reactants": [
+        { "formula": "R-CONH₂", "name": "Amide" },
+        { "formula": "Br₂", "name": "Bromine" },
+        { "formula": "NaOH", "name": "Sodium hydroxide" }
+      ],
+      "products": [
+        { "formula": "R-NH₂", "name": "Primary amine", "yield": "70%" },
+        { "formula": "Na₂CO₃", "name": "Sodium carbonate" },
+        { "formula": "2NaBr", "name": "Sodium bromide" }
+      ],
+      "arrow": "→",
+      "conditions": "Bromine in aqueous NaOH, then heat",
+      "mechanism": "Formation of isocyanate intermediate followed by rearrangement",
+      "notes": "Amine has one carbon less than starting amide",
+      "difficulty": "intermediate",
+      "applications": ["Amine synthesis", "Degradation reaction"]
+    },
+    {
+      "id": "gabriel-synthesis",
+      "title": "Gabriel Phthalimide Synthesis",
+      "type": "substitution",
+      "reactants": [
+        { "formula": "C₆H₄(CO)₂NH", "name": "Phthalimide" },
+        { "formula": "R-X", "name": "Alkyl halide" },
+        { "formula": "KOH", "name": "Potassium hydroxide" }
+      ],
+      "products": [
+        { "formula": "R-NH₂", "name": "Primary amine", "yield": "80%" },
+        {
+          "formula": "C₆H₄(CO)₂O",
+          "name": "Phthalic anhydride",
+          "recyclable": true
+        }
+      ],
+      "arrow": "→",
+      "conditions": "1. KOH/ethanol, 2. R-X, 3. Hydrazine or acid hydrolysis",
+      "mechanism": "SN2 alkylation of phthalimide anion followed by hydrolysis",
+      "notes": "Produces pure primary amines without mixture problem",
+      "difficulty": "intermediate",
+      "applications": [
+        "Pure primary amine synthesis",
+        "Pharmaceutical manufacturing"
+      ]
+    },
+    {
+      "id": "schotten-baumann",
+      "title": "Schotten-Baumann Reaction",
+      "type": "acylation",
+      "reactants": [
+        { "formula": "Ar-NH₂", "name": "Aniline" },
+        { "formula": "CH₃COCl", "name": "Acetyl chloride" },
+        { "formula": "NaOH", "name": "Sodium hydroxide" }
+      ],
+      "products": [
+        { "formula": "Ar-NH-COCH₃", "name": "Acetanilide", "yield": "90%" },
+        { "formula": "NaCl", "name": "Sodium chloride" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Aqueous NaOH, room temperature, vigorous stirring",
+      "mechanism": "Nucleophilic acyl substitution",
+      "notes": "Aqueous conditions remove HCl byproduct, drives reaction forward",
+      "difficulty": "easy",
+      "applications": ["Amide synthesis", "Protection of amino groups"]
+    },
+    {
+      "id": "reductive-amination",
+      "title": "Reductive Amination",
+      "type": "amination",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aldehyde" },
+        { "formula": "NH₃", "name": "Ammonia" },
+        { "formula": "H₂", "name": "Hydrogen" }
+      ],
+      "products": [
+        { "formula": "R-CH₂-NH₂", "name": "Primary amine", "yield": "75%" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "H₂, Ni or Pt catalyst, or NaBH₃CN in methanol",
+      "mechanism": "Formation of imine intermediate followed by reduction",
+      "notes": "Can use primary or secondary amines instead of NH₃ for secondary/tertiary amines",
+      "difficulty": "intermediate",
+      "applications": [
+        "Amine synthesis",
+        "Pharmaceutical manufacturing",
+        "Natural product synthesis"
+      ]
+    },
+    {
+      "id": "mustard-oil-reaction",
+      "title": "Mustard Oil Reaction",
+      "type": "test",
+      "reactants": [
+        { "formula": "R-NH₂", "name": "Primary amine" },
+        { "formula": "CS₂", "name": "Carbon disulfide" },
+        { "formula": "HgCl₂", "name": "Mercuric chloride" }
+      ],
+      "products": [
+        { "formula": "R-NCS", "name": "Isothiocyanate", "odor": "pungent" },
+        { "formula": "HgS", "name": "Mercuric sulfide", "color": "black" }
+      ],
+      "arrow": "→",
+      "conditions": "CS₂ followed by HgCl₂ solution",
+      "mechanism": "Formation of dithiocarbamic acid then decomposition",
+      "notes": "Test for primary amines; gives characteristic pungent odor of mustard oil",
+      "difficulty": "easy",
+      "applications": ["Qualitative test", "Isothiocyanate synthesis"]
+    },
+    {
+      "id": "nitrous-acid-primary-aliphatic",
+      "title": "Nitrous Acid with Primary Aliphatic Amines",
+      "type": "diazotization",
+      "reactants": [
+        { "formula": "R-NH₂", "name": "Primary aliphatic amine" },
+        { "formula": "HNO₂", "name": "Nitrous acid", "generated": "in situ" }
+      ],
+      "products": [
+        { "formula": "R-OH", "name": "Alcohol" },
+        { "formula": "N₂", "name": "Nitrogen gas", "state": "gas" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "NaNO₂ + HCl at room temperature",
+      "mechanism": "Formation of diazonium salt which decomposes to carbocation",
+      "notes": "Brisk effervescence of N₂ gas; gives mixture of products via carbocation rearrangement",
+      "difficulty": "intermediate",
+      "applications": [
+        "Alcohol synthesis",
+        "Quantitative analysis of amino groups"
+      ]
+    }
+  ],
+
+  "reactionGroups": {
+    "diazonium": {
+      "name": "Diazonium Salt Reactions",
+      "description": "Reactions of Ar-N₂⁺ salts for functional group interconversion",
+      "icon": "🎨"
+    },
+    "test": {
+      "name": "Qualitative Tests",
+      "description": "Identification and distinction tests for different amine classes",
+      "icon": "🧪"
+    },
+    "acylation": {
+      "name": "Acylation Reactions",
+      "description": "Formation of amides from amines",
+      "icon": "🔗"
+    },
+    "rearrangement": {
+      "name": "Rearrangement Reactions",
+      "description": "Structural rearrangements in amine synthesis",
+      "icon": "🔄"
+    },
+    "amination": {
+      "name": "Amination Reactions",
+      "description": "Introduction of amino groups",
+      "icon": "N"
+    }
+  },
+
+  "amineTests": [
+    {
+      "name": "Carbylamine Test",
+      "reagents": "CHCl₃ + alc. KOH",
+      "positiveFor": "Primary amines only",
+      "observation": "Foul-smelling isocyanide",
+      "specificity": "Excellent"
+    },
+    {
+      "name": "Nitrous Acid Test",
+      "reagents": "NaNO₂ + HCl",
+      "positiveFor": "All amines, different products",
+      "observation": "1° aliphatic: N₂ gas; 1° aromatic: Diazonium salt; 2°: Yellow oil; 3°: Salt",
+      "specificity": "Good for differentiation"
+    },
+    {
+      "name": "Hinsberg Test",
+      "reagents": "C₆H₅SO₂Cl + KOH",
+      "positiveFor": "Differentiation of 1°, 2°, 3° amines",
+      "observation": "1°: Soluble sulfonamide; 2°: Insoluble sulfonamide; 3°: No reaction",
+      "specificity": "Excellent for classification"
+    },
+    {
+      "name": "Mustard Oil Test",
+      "reagents": "CS₂ + HgCl₂",
+      "positiveFor": "Primary amines",
+      "observation": "Pungent smell of isothiocyanate + black precipitate",
+      "specificity": "Good"
+    }
+  ],
+
+  "basicityData": {
+    "orderInWater": "(CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃ > C₆H₅NH₂",
+    "explanation": "Combination of inductive, steric, and solvation effects",
+    "pKbValues": {
+      "ammonia": 4.75,
+      "methylamine": 3.36,
+      "dimethylamine": 3.27,
+      "trimethylamine": 4.19,
+      "aniline": 9.38,
+      "pyridine": 8.75
+    },
+    "factors": [
+      "Alkyl groups: Electron-donating (+I effect) increases basicity",
+      "Aromatic amines: Resonance decreases electron density on N",
+      "Steric effects: Bulky groups decrease solvation",
+      "Solvation: More H-bonding = more stable conjugate acid"
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+/* current file location: ./assets/css/components/_navigation.css */
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.nav-link:hover {
+  color: #667eea;
+}
+
+.nav-link.active {
+  color: #667eea;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-gradient);
+  border-radius: 1px;
+}
+
+/* Dropdown Styles (from your existing dropdown.css) */
+.dropdown-modern {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-modern {
+  background: transparent;
+  color: var(--text-color);
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-normal);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropbtn-modern:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+.dropdown-content-modern {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+  z-index: 1000;
+  padding: 8px 0;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-modern:hover .dropdown-content-modern {
+  display: block;
+}
+
+.dropdown-content-modern a {
+  color: var(--text-color);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  transition: all var(--transition-normal);
+  font-weight: 500;
+}
+
+.dropdown-content-modern a:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  padding-left: 25px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: rgba(102, 126, 234, 0.1);
+  color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-normal);
+  border: none;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: rotate(15deg);
+}
+
+/* Header Layout */
+.header {
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--header-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title a {
+  font-size: 1.4em;
+  font-weight: 700;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all var(--transition-normal);
+}
+
+.title a:hover {
+  opacity: 0.9;
+}

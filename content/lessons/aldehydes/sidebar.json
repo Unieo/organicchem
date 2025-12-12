@@ -1,0 +1,50 @@
+{
+  "title": "Aldehydes",
+  "subtitle": "Carbonyl compounds with R-CHO group",
+  "color": "#e17055",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Oxidation of Alcohols", "id": "oxidation-alcohol" },
+        { "title": "Ozonolysis", "id": "ozonolysis" },
+        { "title": "Hydration of Alkynes", "id": "hydration-alkyne" },
+        { "title": "Rosenmund Reduction", "id": "rosenmund" },
+        { "title": "Stephen Reaction", "id": "stephen" },
+        { "title": "Gattermann-Koch", "id": "gattermann-koch" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Oxidation", "id": "oxidation" },
+        { "title": "Reduction", "id": "reduction" },
+        { "title": "Nucleophilic Addition", "id": "nucleophilic-addition" },
+        { "title": "Condensation", "id": "condensation" },
+        { "title": "Polymerization", "id": "polymers" }
+      ]
+    },
+    {
+      "title": "Important Aldehydes",
+      "id": "important"
+    },
+    {
+      "title": "Qualitative Tests",
+      "id": "tests"
+    }
+  ]
+}

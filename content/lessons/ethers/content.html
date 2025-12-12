@@ -1,0 +1,723 @@
+<!-- content/lessons/ethers/content.html -->
+<div class="lesson-content">
+  <!-- Chapter 1: Introduction -->
+  <section id="introduction" class="content-section">
+    <h2 class="section-title">Introduction to Ethers</h2>
+
+    <div class="section-content">
+      <p>
+        Ethers are organic compounds containing an oxygen atom connected to two
+        alkyl or aryl groups, with the general formula R-O-R'.
+      </p>
+
+      <div class="highlight-box">
+        <div class="highlight-title">Key Feature</div>
+        <p>
+          The C-O-C bond angle in ethers is approximately
+          <span class="chemical-formula">110°</span>, similar to water, due to
+          <span class="chemical-formula">sp³</span> hybridization of oxygen.
+        </p>
+      </div>
+
+      <div class="reaction-box">
+        <h3>General Structure</h3>
+        <div class="reaction-scheme">
+          R-O-R' (where R and R' can be same or different)
+        </div>
+        <div class="reaction-conditions">
+          <strong>Symmetrical:</strong> R = R' (e.g., CH₃-O-CH₃, Dimethyl
+          ether)<br />
+          <strong>Unsymmetricall:</strong> R ≠ R' (e.g., CH₃-O-C₂H₅, Ethyl
+          methyl ether)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 2: Classification -->
+  <section id="classification" class="content-section">
+    <h2 class="section-title">Classification of Ethers</h2>
+
+    <div class="section-content">
+      <h3 id="based-on-groups">Based on Attached Groups</h3>
+
+      <div class="conditions-box">
+        <h3>Types of Ethers</h3>
+        <ul>
+          <li>
+            <strong>Simple/Symmetrical Ethers:</strong> Both alkyl groups same
+            (R-O-R)
+          </li>
+          <li>
+            <strong>Mixed/Unsymmetricall Ethers:</strong> Different alkyl groups
+            (R-O-R')
+          </li>
+          <li>
+            <strong>Aromatic Ethers (Aryl ethers):</strong> At least one aryl
+            group (Ar-O-R or Ar-O-Ar)
+          </li>
+          <li>
+            <strong>Cyclic Ethers:</strong> Oxygen as part of a ring (e.g.,
+            epoxy, tetrahydrofuran)
+          </li>
+        </ul>
+      </div>
+
+      <h3 id="cyclic-ethers">Cyclic Ethers</h3>
+
+      <div class="reaction-box">
+        <h3>Important Cyclic Ethers</h3>
+        <ul>
+          <li>
+            <strong>Epoxides (Oxiranes):</strong> 3-membered rings (C₂H₄O)
+          </li>
+          <li><strong>Oxetanes:</strong> 4-membered rings (C₃H₆O)</li>
+          <li><strong>Furan:</strong> 5-membered with double bonds</li>
+          <li>
+            <strong>Tetrahydrofuran (THF):</strong> 5-membered saturated (C₄H₈O)
+          </li>
+          <li><strong>Pyran:</strong> 6-membered with double bonds</li>
+          <li><strong>Tetrahydropyran:</strong> 6-membered saturated</li>
+          <li><strong>Dioxane:</strong> 6-membered with two oxygens</li>
+        </ul>
+      </div>
+
+      <h3 id="crown-ethers">Crown Ethers</h3>
+
+      <div class="highlight-box">
+        <div class="highlight-title">Macrocyclic Polyethers</div>
+        <p>
+          Large cyclic ethers containing multiple oxygen atoms that can complex
+          with metal ions. Named as "crown-n" where n is total atoms (e.g.,
+          18-crown-6 has 18 atoms, 6 oxygens).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 3: Nomenclature -->
+  <section id="nomenclature" class="content-section">
+    <h2 class="section-title">Nomenclature of Ethers</h2>
+
+    <div class="section-content">
+      <div class="highlight-box">
+        <div class="highlight-title">Two Naming Systems</div>
+        <p>
+          1. <strong>Common Names:</strong> Alkyl groups + "ether" (for simple
+          ethers)<br />
+          2. <strong>IUPAC Names:</strong> Alkoxy substituent on parent chain
+          (for mixed/complex ethers)
+        </p>
+      </div>
+
+      <div class="reaction-box">
+        <h3>Examples</h3>
+        <div class="reaction-scheme">
+          CH₃-O-CH₃ → Dimethyl ether (common) or Methoxymethane (IUPAC)
+        </div>
+        <div class="reaction-scheme">
+          CH₃-O-C₂H₅ → Ethyl methyl ether (common) or Methoxyethane (IUPAC)
+        </div>
+        <div class="reaction-scheme">
+          C₂H₅-O-C₂H₅ → Diethyl ether (common) or Ethoxyethane (IUPAC)
+        </div>
+        <div class="reaction-scheme">
+          C₆H₅-O-CH₃ → Methyl phenyl ether (common) or Methoxybenzene (IUPAC:
+          Anisole)
+        </div>
+        <div class="reaction-scheme">
+          CH₃-CH₂-O-CH₂-CH₂-CH₃ → Ethyl propyl ether (common) or 1-Ethoxypropane
+          (IUPAC)
+        </div>
+      </div>
+
+      <div class="note-box">
+        <strong>Special Names</strong>
+        <p>
+          <strong>Anisole:</strong> Methyl phenyl ether (C₆H₅-O-CH₃)<br />
+          <strong>Phenetole:</strong> Ethyl phenyl ether (C₆H₅-O-C₂H₅)<br />
+          <strong>Diphenyl ether:</strong> (C₆H₅)₂O
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 4: Physical Properties -->
+  <section id="properties" class="content-section">
+    <h2 class="section-title">Physical Properties</h2>
+
+    <div class="section-content">
+      <div class="conditions-box">
+        <h3>Characteristic Properties</h3>
+        <ul>
+          <li>
+            <strong>State:</strong> Dimethyl/ethyl methyl ethers are gases;
+            others are volatile liquids
+          </li>
+          <li><strong>Odor:</strong> Sweet, pleasant, ethereal odor</li>
+          <li>
+            <strong>Boiling Points:</strong> Similar to alkanes, lower than
+            alcohols of comparable MW
+          </li>
+          <li>
+            <strong>Melting Points:</strong> Low due to symmetrical structure
+          </li>
+          <li>
+            <strong>Solubility:</strong> Partially soluble in water (hydrogen
+            bonding with water)
+          </li>
+          <li>
+            <strong>Dipole Moment:</strong> Moderate (Diethyl ether: 1.18 D)
+          </li>
+          <li><strong>Density:</strong> Less than water (float on water)</li>
+        </ul>
+      </div>
+
+      <div class="reaction-box">
+        <h3>Boiling Point Comparison</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 15px 0">
+          <tr style="background: var(--card-bg)">
+            <th style="padding: 10px; text-align: left">Compound</th>
+            <th style="padding: 10px; text-align: left">Molecular Weight</th>
+            <th style="padding: 10px; text-align: left">Boiling Point (°C)</th>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              n-Pentane (C₅H₁₂)
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              72
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              36
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Diethyl ether (C₄H₁₀O)
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              74
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              35
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              n-Butanol (C₄H₁₀O)
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              74
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              118
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 8px">Anisole (C₇H₈O)</td>
+            <td style="padding: 8px">108</td>
+            <td style="padding: 8px">154</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="note-box">
+        <strong>Hydrogen Bonding in Ethers</strong>
+        <p>
+          Ethers cannot form hydrogen bonds with themselves (no O-H bonds) but
+          can act as hydrogen bond acceptors with water or alcohols. This
+          explains their partial water solubility.
+        </p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-title">Important Solvent Properties</div>
+        <p>
+          Ethers are excellent solvents for organic reactions because:<br />
+          1. They dissolve both polar and nonpolar compounds<br />
+          2. They are relatively inert<br />
+          3. They have low boiling points for easy removal<br />
+          4. They coordinate with Grignard and organolithium reagents
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 5: Preparation Methods -->
+  <section id="preparation" class="content-section">
+    <h2 class="section-title">Preparation Methods</h2>
+
+    <div class="section-content">
+      <h3 id="williamson-synthesis">Williamson Ether Synthesis</h3>
+
+      <div class="reaction-box">
+        <h3>Most Important Method</h3>
+        <div class="reaction-scheme">R-X + R'-O⁻Na⁺ → R-O-R' + NaX</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Alkoxide + alkyl halide, SN2 mechanism
+        </div>
+        <div class="reaction-conditions">
+          <strong>Limitation:</strong> Use 1° alkyl halides to avoid elimination
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-title">Mechanism Insight</div>
+        <p>
+          Williamson synthesis is an SN2 reaction. The alkoxide ion attacks the
+          electrophilic carbon of the alkyl halide. Tertiary halides give
+          elimination products (alkenes) instead.
+        </p>
+      </div>
+
+      <h3 id="dehydration-alcohols">Dehydration of Alcohols</h3>
+
+      <div class="reaction-box">
+        <h3>Intermolecular Dehydration</h3>
+        <div class="reaction-scheme">2R-OH → R-O-R + H₂O</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Conc. H₂SO₄, 140°C (lower temp than
+          alkene formation)
+        </div>
+        <div class="reaction-conditions">
+          <strong>Limitation:</strong> Only gives symmetrical ethers from single
+          alcohol
+        </div>
+      </div>
+
+      <h3 id="alkoxymercuration">Alkoxymercuration-Demercuration</h3>
+
+      <div class="reaction-box">
+        <h3>From Alkenes</h3>
+        <div class="reaction-scheme">CH₂=CH₂ + R-OH → CH₃-CH₂-O-R</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Hg(OAc)₂ then NaBH₄, Markovnikov addition
+        </div>
+        <div class="reaction-conditions">
+          <strong>Advantage:</strong> No rearrangement, high yield,
+          anti-Markovnikov
+        </div>
+      </div>
+
+      <h3 id="from-diazo">From Diazomethane</h3>
+
+      <div class="reaction-box">
+        <h3>Methylation of Alcohols</h3>
+        <div class="reaction-scheme">R-OH + CH₂N₂ → R-O-CH₃ + N₂</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Acid catalyst (BF₃, HBF₄), very mild
+        </div>
+        <div class="reaction-conditions">
+          <strong>Caution:</strong> Diazomethane is toxic and explosive
+        </div>
+      </div>
+
+      <h3 id="ullmann-condensation">Ullmann Ether Synthesis</h3>
+
+      <div class="reaction-box">
+        <h3>For Aryl Ethers</h3>
+        <div class="reaction-scheme">Ar-X + Ar'-O⁻ → Ar-O-Ar' + X⁻</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Copper catalyst, high temperature
+        </div>
+        <div class="reaction-conditions">
+          <strong>Application:</strong> Diarylethers, electron-rich arenes work
+          best
+        </div>
+      </div>
+
+      <h3 id="from-epoxides">From Epoxides</h3>
+
+      <div class="reaction-box">
+        <h3>Ring Opening with Alcohols</h3>
+        <div class="reaction-scheme">+ R-OH → HO-CH₂-CH₂-O-R</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Acid or base catalysis
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 6: Chemical Reactions -->
+  <section id="reactions" class="content-section">
+    <h2 class="section-title">Chemical Reactions</h2>
+
+    <div class="section-content">
+      <div class="highlight-box">
+        <div class="highlight-title">General Reactivity</div>
+        <p>
+          Ethers are relatively inert compared to other oxygen-containing
+          compounds. They resist bases, nucleophiles, and reducing agents, but
+          react with strong acids and oxidizing agents.
+        </p>
+      </div>
+
+      <h3 id="cleavage-acids">Cleavage by Acids</h3>
+
+      <div class="conditions-box">
+        <h3>Mechanism of Acid Cleavage</h3>
+        <ul>
+          <li><strong>Step 1:</strong> Protonation of oxygen (fast)</li>
+          <li>
+            <strong>Step 2:</strong> SN2 attack by halide (for 1° alkyl groups)
+          </li>
+          <li>
+            <strong>Step 3:</strong> SN1 if carbocation stable (for 3° alkyl
+            groups)
+          </li>
+          <li>
+            <strong>Result:</strong> Two alkyl halides or alcohol + alkyl halide
+          </li>
+        </ul>
+      </div>
+
+      <div class="reaction-box">
+        <h3>With Hydrogen Halides</h3>
+        <div class="reaction-scheme">R-O-R' + 2HX → R-X + R'-X + H₂O</div>
+        <div class="reaction-conditions">
+          <strong>Reactivity:</strong> HI > HBr > HCl (HF doesn't react)
+        </div>
+        <div class="reaction-conditions">
+          <strong>Temperature effect:</strong> Excess HI at high temp gives
+          complete cleavage
+        </div>
+      </div>
+
+      <div class="reaction-box">
+        <h3>With Concentrated H₂SO₄</h3>
+        <div class="reaction-scheme">R-O-R' + H₂SO₄ → R-OH + R'-OSO₃H</div>
+        <div class="reaction-conditions">
+          <strong>Note:</strong> Only one alkyl group cleaved, forms alkyl
+          hydrogen sulfate
+        </div>
+      </div>
+
+      <h3 id="peroxide-formation">Peroxide Formation</h3>
+
+      <div class="reaction-box">
+        <h3>Autoxidation Danger</h3>
+        <div class="reaction-scheme">
+          R-O-R' + O₂ → R-O-O-R' (hydroperoxides and peroxides)
+        </div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Exposure to air/oxygen, light catalyzed
+        </div>
+        <div class="reaction-conditions">
+          <strong>Danger:</strong> Peroxides are explosive when concentrated
+        </div>
+      </div>
+
+      <div class="note-box">
+        <strong>Safety Warning</strong>
+        <p>
+          Ethers must be stored in dark bottles with antioxidants (BHT,
+          hydroquinone). Old ether samples should be tested for peroxides before
+          distillation (starch-iodide test gives blue color).
+        </p>
+      </div>
+
+      <h3 id="complex-formation">Complex Formation</h3>
+
+      <div class="reaction-box">
+        <h3>With Lewis Acids</h3>
+        <div class="reaction-scheme">R₂O: + BF₃ → R₂O:→BF₃</div>
+        <div class="reaction-conditions">
+          <strong>Importance:</strong> Ethers are good Lewis bases, coordinate
+          with Grignard reagents
+        </div>
+      </div>
+
+      <h3 id="epoxidation">Formation of Epoxides</h3>
+
+      <div class="reaction-box">
+        <h3>From Alkenes via Peracids</h3>
+        <div class="reaction-scheme">CH₂=CH₂ + R-CO₃H → + R-COOH</div>
+        <div class="reaction-conditions">
+          <strong>Peracids:</strong> m-CPBA, peracetic acid, performic acid
+        </div>
+        <div class="reaction-conditions">
+          <strong>Stereochemistry:</strong> Syn addition, retention of
+          configuration
+        </div>
+      </div>
+
+      <h3 id="claisen-rearrangement">Claisen Rearrangement</h3>
+
+      <div class="reaction-box">
+        <h3>Special Reaction of Allyl Aryl Ethers</h3>
+        <div class="reaction-scheme">CH₂=CH-CH₂-O-C₆H₅ → O-C₆H₄-CH₂-CH=CH₂</div>
+        <div class="reaction-conditions">
+          <strong>Conditions:</strong> Heat (200°C), sigmatropic [3,3]
+          rearrangement
+        </div>
+        <div class="reaction-conditions">
+          <strong>Product:</strong> Ortho-allyl phenol (or para if ortho
+          occupied)
+        </div>
+      </div>
+
+      <h3 id="oxidation">Oxidation Reactions</h3>
+
+      <div class="reaction-box">
+        <h3>Formation of Hydroperoxides</h3>
+        <div class="reaction-scheme">CH₃-O-C₂H₅ + O₂ → CH₃-O-CH(OOH)-CH₃</div>
+        <div class="reaction-conditions">
+          <strong>Autoxidation:</strong> Occurs at α-carbon to oxygen
+        </div>
+      </div>
+
+      <div class="conditions-box">
+        <h3>Comparison: Ethers vs Alcohols</h3>
+        <table style="width: 100%; border-collapse: collapse; margin: 15px 0">
+          <tr style="background: var(--card-bg)">
+            <th style="padding: 10px; text-align: left">Property</th>
+            <th style="padding: 10px; text-align: left">Ethers</th>
+            <th style="padding: 10px; text-align: left">Alcohols</th>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Hydrogen Bonding
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Acceptor only
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Donor and acceptor
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Boiling Point
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Low (like alkanes)
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              High (H-bonding)
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Acidity
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Very weak acids
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Weak acids (pKa ~16)
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Reactivity with Na
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              No reaction
+            </td>
+            <td
+              style="padding: 8px; border-bottom: 1px solid var(--border-color)"
+            >
+              Forms alkoxides + H₂
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 8px">Oxidation</td>
+            <td style="padding: 8px">Forms peroxides</td>
+            <td style="padding: 8px">Forms carbonyls/acids</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3 id="crown-complexes">Crown Ether Complexation</h3>
+
+      <div class="reaction-box">
+        <h3>Host-Guest Chemistry</h3>
+        <div class="reaction-scheme">Crown ether + M⁺ → [Crown·M]⁺ complex</div>
+        <div class="reaction-conditions">
+          <strong>Selectivity:</strong> 12-crown-4 prefers Li⁺, 15-crown-5
+          prefers Na⁺, 18-crown-6 prefers K⁺
+        </div>
+        <div class="reaction-conditions">
+          <strong>Application:</strong> Solubilize inorganic salts in organic
+          solvents, phase transfer catalysis
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chapter 7: Applications -->
+  <section id="applications" class="content-section">
+    <h2 class="section-title">Applications of Ethers</h2>
+
+    <div class="section-content">
+      <div class="conditions-box">
+        <h3>Industrial and Laboratory Uses</h3>
+        <ul>
+          <li>
+            <strong>Solvents:</strong> Diethyl ether (extractions), THF
+            (polymerization), dioxane (aqueous mixtures)
+          </li>
+          <li>
+            <strong>Anesthetics:</strong> Diethyl ether (first surgical
+            anesthetic, 1846), enflurane, isoflurane
+          </li>
+          <li>
+            <strong>Starting Materials:</strong> For Williamson synthesis,
+            Grignard reactions
+          </li>
+          <li>
+            <strong>Fuel Additives:</strong> MTBE (methyl tert-butyl ether) -
+            oxygenate, now phased out
+          </li>
+          <li>
+            <strong>Protecting Groups:</strong> Methoxy groups in organic
+            synthesis
+          </li>
+          <li>
+            <strong>Phase Transfer Catalysts:</strong> Crown ethers for
+            solubility enhancement
+          </li>
+          <li>
+            <strong>Polymer Industry:</strong> THF for spandex, PTMEG production
+          </li>
+        </ul>
+      </div>
+
+      <div class="reaction-box">
+        <h3>Diethyl Ether as Anesthetic</h3>
+        <div class="reaction-scheme">
+          First demonstrated by William T.G. Morton in 1846
+        </div>
+        <div class="reaction-conditions">
+          <strong>Advantages:</strong> Wide safety margin, muscle relaxation
+        </div>
+        <div class="reaction-conditions">
+          <strong>Disadvantages:</strong> Flammable, nausea, slow
+          induction/recovery
+        </div>
+      </div>
+
+      <div class="note-box">
+        <strong>Modern Ether Anesthetics</strong>
+        <p>
+          Modern halogenated ethers are safer:
+          <strong>Enflurane, Isoflurane, Sevoflurane, Desflurane</strong>. They
+          are non-flammable, have better control, and fewer side effects than
+          diethyl ether.
+        </p>
+      </div>
+
+      <div class="highlight-box">
+        <div class="highlight-title">MTBE Controversy</div>
+        <p>
+          Methyl tert-butyl ether was widely used as gasoline oxygenate (reduces
+          CO emissions) but banned in many areas due to groundwater
+          contamination. It's highly soluble, moves quickly in water, and has
+          unpleasant taste/odor at very low concentrations.
+        </p>
+      </div>
+
+      <div class="reaction-box">
+        <h3>THF in Polymer Industry</h3>
+        <div class="reaction-scheme">
+          THF → Polymerization → PTMEG → Spandex fibers
+        </div>
+        <div class="reaction-conditions">
+          <strong>Process:</strong> Cationic ring-opening polymerization with
+          Lewis acid catalysts
+        </div>
+        <div class="reaction-conditions">
+          <strong>Product:</strong> Poly(tetramethylene ether) glycol (PTMEG)
+          for elastic fibers
+        </div>
+      </div>
+
+      <div class="conditions-box">
+        <h3>Safety Considerations</h3>
+        <ul>
+          <li>
+            <strong>Flammability:</strong> Low flash points (diethyl ether:
+            -45°C)
+          </li>
+          <li>
+            <strong>Peroxide Formation:</strong> Test old samples before
+            use/distillation
+          </li>
+          <li>
+            <strong>Explosion Risk:</strong> Peroxide crystals can detonate on
+            disturbance
+          </li>
+          <li>
+            <strong>Toxicity:</strong> Chronic exposure affects CNS, some are
+            carcinogenic
+          </li>
+          <li>
+            <strong>Storage:</strong> Dark bottles, antioxidants, away from
+            light/heat
+          </li>
+          <li>
+            <strong>Disposal:</strong> As hazardous organic waste, never down
+            drain
+          </li>
+        </ul>
+      </div>
+
+      <div class="reaction-box">
+        <h3>Crown Ethers in Nobel Prize Chemistry</h3>
+        <div class="reaction-scheme">
+          Charles J. Pedersen (1967) → Discovery of crown ethers → Nobel Prize
+          1987
+        </div>
+        <div class="reaction-conditions">
+          <strong>Impact:</strong> Founded host-guest chemistry and
+          supramolecular chemistry
+        </div>
+        <div class="reaction-conditions">
+          <strong>Applications:</strong> Ion transport, molecular recognition,
+          catalysis
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,327 @@
+{
+  "lesson": "Ketones",
+  "color": "#fd79a8",
+  "reactions": [
+    {
+      "id": "baeyer-villiger",
+      "title": "Baeyer-Villiger Oxidation",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "R-CO-R'", "name": "Ketone" },
+        {
+          "formula": "R\"COOOH",
+          "name": "Peroxyacid",
+          "common": "mCPBA, peracetic acid"
+        }
+      ],
+      "products": [
+        { "formula": "R-COO-R'", "name": "Ester", "yield": "70-90%" },
+        { "formula": "R\"COOH", "name": "Carboxylic acid" }
+      ],
+      "arrow": "→",
+      "conditions": "Peroxyacid, sometimes acid catalyst (BF₃, TsOH)",
+      "mechanism": "Nucleophilic addition of peroxyacid to carbonyl, rearrangement with migration",
+      "notes": "Migration aptitude: tertiary alkyl > secondary > phenyl > primary > methyl",
+      "difficulty": "intermediate",
+      "applications": [
+        "Ester synthesis",
+        "Lactone formation",
+        "Steroid chemistry"
+      ]
+    },
+    {
+      "id": "iodoform-test",
+      "title": "Iodoform Test (Haloform Reaction)",
+      "type": "test",
+      "reactants": [
+        { "formula": "CH₃-CO-R", "name": "Methyl ketone" },
+        { "formula": "I₂", "name": "Iodine" },
+        { "formula": "NaOH", "name": "Sodium hydroxide" }
+      ],
+      "products": [
+        {
+          "formula": "CHI₃",
+          "name": "Iodoform",
+          "state": "yellow precipitate"
+        },
+        { "formula": "R-COONa", "name": "Sodium carboxylate" },
+        { "formula": "NaI", "name": "Sodium iodide" }
+      ],
+      "arrow": "→",
+      "conditions": "I₂ in aqueous NaOH, warm",
+      "mechanism": "Enolate formation, triple α-halogenation, nucleophilic substitution",
+      "notes": "Positive for CH₃-CO- or CH₃CH(OH)- groups. Yellow crystalline precipitate is characteristic.",
+      "difficulty": "easy",
+      "applications": [
+        "Qualitative test",
+        "Methyl ketone identification",
+        "Iodoform synthesis"
+      ]
+    },
+    {
+      "id": "wittig-reaction",
+      "title": "Wittig Reaction",
+      "type": "olefination",
+      "reactants": [
+        { "formula": "R-CO-R'", "name": "Ketone (or aldehyde)" },
+        { "formula": "Ph₃P=CHR\"", "name": "Wittig reagent (ylide)" }
+      ],
+      "products": [
+        { "formula": "R-C(R\")=CH-R'", "name": "Alkene", "yield": "60-90%" },
+        { "formula": "Ph₃P=O", "name": "Triphenylphosphine oxide" }
+      ],
+      "arrow": "→",
+      "conditions": "Mild conditions, often room temperature",
+      "mechanism": "[2+2] cycloaddition then retro [2+2] to give alkene",
+      "notes": "Stereoselective: unstabilized ylides give Z-alkenes, stabilized give E-alkenes",
+      "difficulty": "intermediate",
+      "applications": [
+        "Alkene synthesis",
+        "Natural product synthesis",
+        "Vitamin A synthesis"
+      ]
+    },
+    {
+      "id": "aldol-condensation-ketone",
+      "title": "Aldol Condensation of Ketones",
+      "type": "condensation",
+      "reactants": [{ "formula": "2 CH₃COCH₃", "name": "Acetone" }],
+      "products": [
+        {
+          "formula": "(CH₃)₂C(OH)CH₂COCH₃",
+          "name": "Diacetone alcohol",
+          "yield": "70%"
+        }
+      ],
+      "arrow": "⇌",
+      "conditions": "Dilute base (NaOH) or acid catalyst, reversible",
+      "mechanism": "Enolate formation → nucleophilic addition → protonation",
+      "notes": "Equilibrium favors acetone at room temperature. Dehydration to α,β-unsaturated ketone occurs with heat.",
+      "difficulty": "intermediate",
+      "applications": [
+        "C-C bond formation",
+        "Synthesis of larger molecules",
+        "Industrial chemicals"
+      ]
+    },
+    {
+      "id": "clemmensen-reduction-ketone",
+      "title": "Clemmensen Reduction (Ketone to Alkane)",
+      "type": "reduction",
+      "reactants": [{ "formula": "R-CO-R'", "name": "Ketone" }],
+      "products": [
+        { "formula": "R-CH₂-R'", "name": "Alkane", "yield": "60-80%" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Zn-Hg amalgam, concentrated HCl, reflux",
+      "mechanism": "Carbanion intermediate on zinc surface, followed by protonation",
+      "notes": "Acidic conditions. Sensitive groups (acid-sensitive, reducible) may not survive.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Carbonyl to methylene reduction",
+        "Hydrocarbon synthesis"
+      ]
+    },
+    {
+      "id": "wolff-kishner-ketone",
+      "title": "Wolff-Kishner Reduction",
+      "type": "reduction",
+      "reactants": [
+        { "formula": "R-CO-R'", "name": "Ketone" },
+        { "formula": "NH₂NH₂", "name": "Hydrazine" },
+        { "formula": "KOH", "name": "Potassium hydroxide" }
+      ],
+      "products": [
+        { "formula": "R-CH₂-R'", "name": "Alkane", "yield": "70-85%" },
+        { "formula": "N₂", "name": "Nitrogen gas" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "→",
+      "conditions": "Hydrazine hydrate, KOH, ethylene glycol, 180-200°C",
+      "mechanism": "Hydrazone formation then base-induced elimination of N₂",
+      "notes": "Basic conditions alternative to Clemmensen. High temperatures required.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Carbonyl reduction under basic conditions",
+        "Natural product synthesis"
+      ]
+    },
+    {
+      "id": "friedel-crafts-acylation",
+      "title": "Friedel-Crafts Acylation",
+      "type": "acylation",
+      "reactants": [
+        { "formula": "Ar-H", "name": "Aromatic compound" },
+        { "formula": "R-CO-Cl", "name": "Acid chloride" },
+        { "formula": "AlCl₃", "name": "Aluminum chloride" }
+      ],
+      "products": [
+        { "formula": "Ar-CO-R", "name": "Aryl ketone", "yield": "60-90%" },
+        { "formula": "HCl", "name": "Hydrogen chloride" }
+      ],
+      "arrow": "→",
+      "conditions": "AlCl₃ (1.1 equiv), dry inert solvent (CS₂, CH₂Cl₂), room temp",
+      "mechanism": "Electrophilic aromatic substitution via acylium ion (R-CO⁺)",
+      "notes": "No rearrangement (unlike FC alkylation). Stoichiometric AlCl₃ needed as complex with product.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Aromatic ketone synthesis",
+        "Pharmaceutical intermediates",
+        "Perfume synthesis"
+      ]
+    },
+    {
+      "id": "mpv-reduction",
+      "title": "Meerwein-Ponndorf-Verley Reduction",
+      "type": "reduction",
+      "reactants": [
+        { "formula": "R-CO-R'", "name": "Ketone" },
+        { "formula": "(i-PrO)₃Al", "name": "Aluminum isopropoxide" }
+      ],
+      "products": [
+        {
+          "formula": "R-CH(OH)-R'",
+          "name": "Secondary alcohol",
+          "yield": "80-95%"
+        },
+        { "formula": "CH₃COCH₃", "name": "Acetone" }
+      ],
+      "arrow": "⇌",
+      "conditions": "Aluminum isopropoxide, isopropanol, reflux",
+      "mechanism": "Six-membered cyclic transition state, hydride transfer",
+      "notes": "Selective for ketones over aldehydes. Reversible - can oxidize alcohols (Oppenauer oxidation).",
+      "difficulty": "intermediate",
+      "applications": [
+        "Selective reduction",
+        "Steroid chemistry",
+        "Asymmetric reduction with chiral ligands"
+      ]
+    },
+    {
+      "id": "reformatsky-reaction",
+      "title": "Reformatsky Reaction",
+      "type": "condensation",
+      "reactants": [
+        { "formula": "R-CO-R'", "name": "Ketone (or aldehyde)" },
+        { "formula": "Br-CH₂COOC₂H₅", "name": "α-Bromo ester" },
+        { "formula": "Zn", "name": "Zinc metal" }
+      ],
+      "products": [
+        {
+          "formula": "R-C(OH)(CH₂COOC₂H₅)-R'",
+          "name": "β-Hydroxy ester",
+          "yield": "50-80%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "Activated Zn dust, dry ether or THF, then hydrolysis",
+      "mechanism": "Formation of zinc enolate, nucleophilic addition to carbonyl, hydrolysis",
+      "notes": "Similar to Grignard but with ester enolate. Less basic than Grignard reagents.",
+      "difficulty": "intermediate",
+      "applications": [
+        "β-Hydroxy ester synthesis",
+        "Natural product synthesis",
+        "Pharmaceutical intermediates"
+      ]
+    },
+    {
+      "id": "dakin-reaction",
+      "title": "Dakin Reaction",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "o-HO-C₆H₄-CHO", "name": "o-Hydroxybenzaldehyde" },
+        { "formula": "H₂O₂", "name": "Hydrogen peroxide" },
+        { "formula": "NaOH", "name": "Sodium hydroxide" }
+      ],
+      "products": [
+        { "formula": "o-HO-C₆H₄-OH", "name": "Catechol", "yield": "60-80%" },
+        { "formula": "HCOONa", "name": "Sodium formate" }
+      ],
+      "arrow": "→",
+      "conditions": "Alkaline H₂O₂, room temperature or gentle heating",
+      "mechanism": "Nucleophilic addition of HOO⁻, rearrangement with aryl migration",
+      "notes": "Only for o- or p-hydroxyaryl aldehydes. Ketone analogs react much slower.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Phenol synthesis",
+        "Catechol production",
+        "Natural product synthesis"
+      ]
+    }
+  ],
+
+  "reactionGroups": {
+    "oxidation": {
+      "name": "Oxidation Reactions",
+      "description": "Ketones undergo special oxidations like Baeyer-Villiger",
+      "icon": "⚗️"
+    },
+    "reduction": {
+      "name": "Reduction Reactions",
+      "description": "Reduction to alcohols or alkanes",
+      "icon": "⬇️"
+    },
+    "condensation": {
+      "name": "Condensation Reactions",
+      "description": "C-C bond forming reactions",
+      "icon": "🔗"
+    },
+    "olefination": {
+      "name": "Olefination Reactions",
+      "description": "Alkene formation from carbonyls",
+      "icon": "═"
+    },
+    "test": {
+      "name": "Qualitative Tests",
+      "description": "Identification and distinction tests",
+      "icon": "🧪"
+    },
+    "acylation": {
+      "name": "Acylation Reactions",
+      "description": "Introduction of acyl groups",
+      "icon": "CO"
+    }
+  },
+
+  "carbonylReactivity": {
+    "order": "Formaldehyde > Aliphatic Aldehydes > Aromatic Aldehydes > Aliphatic Ketones > Aromatic Ketones",
+    "factors": [
+      "Steric hindrance: More alkyl groups = less reactive",
+      "Electronic effects: Electron-donating groups reduce electrophilicity",
+      "Resonance: Aromatic conjugation stabilizes carbonyl"
+    ],
+    "comparison": "Ketones are 10-100 times less reactive than corresponding aldehydes"
+  },
+
+  "tautomerism": {
+    "ketoEnolEquilibrium": {
+      "acetone": "Keto: >99.9%, Enol: <0.1%",
+      "acetylacetone": "Keto: 15%, Enol: 85% (intramolecular H-bonding)",
+      "phenol": "Keto: 0%, Enol: 100% (aromatic stabilization)"
+    },
+    "factorsIncreasingEnol": [
+      "α-Carbonyl groups (1,3-diketones)",
+      "Conjugation with aromatic ring",
+      "Intramolecular hydrogen bonding",
+      "Steric strain relief"
+    ]
+  },
+
+  "spectralData": {
+    "IR": {
+      "C=O stretch": "1705-1725 cm⁻¹ (aliphatic ketones), 1680-1700 cm⁻¹ (conjugated)",
+      "α-CH bend": "~1350-1450 cm⁻¹",
+      "C-C-C stretch": "~1200 cm⁻¹"
+    },
+    "NMR": {
+      "¹³C carbonyl": "δ 190-220 ppm",
+      "¹³C α-carbon": "δ 30-50 ppm",
+      "¹H α-protons": "δ 2.0-2.5 ppm"
+    },
+    "UV": {
+      "n→π* transition": "λmax ~280 nm, ε ~20 (weak)",
+      "π→π* transition": "λmax ~190 nm (strong, if conjugated shifts to longer λ)"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/* current file location: ./assets/css/main.css */
+
+/* ===== IMPORT YOUR EXISTING VARIABLES ===== */
+
+/* ===== BASE STYLES ===== */
+@import "base/_variables.css";
+@import "base/_reset.css";
+@import "base/_typography.css";
+@import "base/_utilities.css";
+
+/* ===== LAYOUTS ===== */
+@import "layouts/_header.css";
+@import "layouts/_footer.css";
+@import "layouts/_lesson-layout.css";
+
+/* ===== COMPONENTS ===== */
+@import "components/_navigation.css";
+@import "components/_content-boxes.css";
+@import "components/_sidebar.css";
+@import "components/_dropdown.css";
+
+@import "components/_chemical-formula.css";
+@import "components/_image-container.css";
+@import "components/_reaction-scheme.css";
+
+/* ===== PAGE-SPECIFIC ===== */
+@import "pages/_home.css";
+@import "pages/_lesson.css";
+@import "pages/_contact.css";
+
+/* ===== DESKTOP-ONLY OVERRIDES ===== */
+/* Since we're focusing on desktop first */
+html,
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family-base);
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all var(--transition-normal);
+}
+
+#app {
+  min-height: 100vh;
+  transition: all var(--transition-slow);
+}

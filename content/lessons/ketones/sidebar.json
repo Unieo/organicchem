@@ -1,0 +1,60 @@
+{
+  "title": "Ketones",
+  "subtitle": "Carbonyl compounds with R-CO-R' structure",
+  "color": "#fd79a8",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature",
+      "sections": [{ "title": "Naming Rules", "id": "naming-rules" }]
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties",
+      "sections": [
+        { "title": "Spectral Properties", "id": "spectral-properties" }
+      ]
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Oxidation of Alcohols", "id": "oxidation-secondary" },
+        { "title": "Hydration of Alkynes", "id": "hydration-alkynes" },
+        { "title": "Friedel-Crafts", "id": "friedel-crafts" },
+        { "title": "Ozonolysis", "id": "ozonolysis-alkenes" },
+        { "title": "Weinreb Method", "id": "weinreb" },
+        { "title": "Wacker Process", "id": "wacker" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Nucleophilic Addition", "id": "nucleophilic-addition" },
+        { "title": "Reduction", "id": "reduction" },
+        { "title": "Oxidation", "id": "oxidation-ketones" },
+        { "title": "Condensation", "id": "condensation" },
+        { "title": "Enolization", "id": "enolization" },
+        { "title": "Halogenation", "id": "halogenation" },
+        { "title": "Special Reactions", "id": "special-reactions" }
+      ]
+    },
+    {
+      "title": "Important Ketones",
+      "id": "important"
+    },
+    {
+      "title": "Tests and Identification",
+      "id": "tests",
+      "sections": [
+        { "title": "Distinction Tests", "id": "distinction-tests" },
+        { "title": "Specific Tests", "id": "specific-tests" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Phenols",
+  "subtitle": "Aromatic compounds with hydroxyl group",
+  "color": "#fd79a8",
+  "chapters": [
+    {
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "title": "Classification",
+      "id": "classification",
+      "sections": [
+        { "title": "Based on -OH Groups", "id": "based-on-oh-groups" },
+        { "title": "Based on Substituents", "id": "based-on-substituents" }
+      ]
+    },
+    {
+      "title": "Nomenclature",
+      "id": "nomenclature"
+    },
+    {
+      "title": "Physical Properties",
+      "id": "properties"
+    },
+    {
+      "title": "Preparation Methods",
+      "id": "preparation",
+      "sections": [
+        { "title": "Cumene Process", "id": "cumene-process" },
+        { "title": "Dow Process", "id": "dow-process" },
+        { "title": "Sulfonation", "id": "sulfonation" }
+      ]
+    },
+    {
+      "title": "Chemical Reactions",
+      "id": "reactions",
+      "sections": [
+        { "title": "Acidity & Salt Formation", "id": "acidity-reactions" },
+        {
+          "title": "Electrophilic Substitution",
+          "id": "electrophilic-substitution"
+        },
+        { "title": "Nitration", "id": "nitration" },
+        { "title": "Halogenation", "id": "halogenation" },
+        { "title": "Sulfonation", "id": "sulfonation" },
+        { "title": "Friedel-Crafts", "id": "friedel-crafts" },
+        { "title": "Esterification", "id": "esterification" },
+        { "title": "Ether Formation", "id": "ethers-formation" },
+        { "title": "Oxidation", "id": "oxidation-reactions" },
+        { "title": "Coupling Reactions", "id": "coupling-reactions" }
+      ]
+    },
+    {
+      "title": "Applications",
+      "id": "applications"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "lesson": "Aldehydes",
+  "color": "#e17055",
+  "reactions": [
+    {
+      "id": "tollens-test",
+      "title": "Tollens' Test (Silver Mirror)",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aldehyde", "role": "reducing agent" },
+        {
+          "formula": "[Ag(NH₃)₂]⁺",
+          "name": "Tollens' reagent",
+          "role": "oxidant"
+        }
+      ],
+      "products": [
+        { "formula": "R-COOH", "name": "Carboxylic acid" },
+        { "formula": "Ag", "name": "Silver metal", "state": "mirror" }
+      ],
+      "arrow": "→",
+      "conditions": "Ammoniacal AgNO₃, warm water bath",
+      "mechanism": "Oxidation of aldehyde to acid with reduction of Ag⁺ to Ag⁰",
+      "notes": "Characteristic silver mirror forms on glass surface",
+      "difficulty": "easy",
+      "applications": ["Aldehyde detection", "Distinguishing from ketones"]
+    },
+    {
+      "id": "fehling-test",
+      "title": "Fehling's Test",
+      "type": "oxidation",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aliphatic aldehyde" },
+        { "formula": "Cu²⁺", "name": "Cupric ion", "role": "oxidant" }
+      ],
+      "products": [
+        { "formula": "R-COOH", "name": "Carboxylic acid" },
+        { "formula": "Cu₂O", "name": "Cuprous oxide", "color": "brick red" }
+      ],
+      "arrow": "→",
+      "conditions": "Fehling's solution, heat",
+      "mechanism": "Oxidation-reduction with color change",
+      "notes": "Only aliphatic aldehydes give positive test",
+      "difficulty": "easy",
+      "applications": ["Sugar detection", "Aldehyde classification"]
+    },
+    {
+      "id": "aldol-condensation",
+      "title": "Aldol Condensation",
+      "type": "condensation",
+      "reactants": [{ "formula": "2 CH₃CHO", "name": "Acetaldehyde" }],
+      "products": [
+        {
+          "formula": "CH₃CH(OH)CH₂CHO",
+          "name": "3-Hydroxybutanal (Aldol)",
+          "yield": "70%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "Dilute NaOH, room temperature",
+      "mechanism": "Enolate formation → nucleophilic addition → protonation",
+      "notes": "Requires α-hydrogen atoms, reversible reaction",
+      "difficulty": "intermediate",
+      "applications": ["C-C bond formation", "Synthesis of larger molecules"]
+    },
+    {
+      "id": "cannizzaro-reaction",
+      "title": "Cannizzaro Reaction",
+      "type": "disproportionation",
+      "reactants": [
+        { "formula": "2 HCHO", "name": "Formaldehyde" },
+        { "formula": "NaOH", "name": "Sodium hydroxide" }
+      ],
+      "products": [
+        { "formula": "HCOONa", "name": "Sodium formate" },
+        { "formula": "CH₃OH", "name": "Methanol" }
+      ],
+      "arrow": "→",
+      "conditions": "50% NaOH, room temperature",
+      "mechanism": "Hydride transfer between two aldehyde molecules",
+      "notes": "Only for aldehydes without α-hydrogens",
+      "difficulty": "intermediate",
+      "applications": ["Industrial methanol production", "Formate synthesis"]
+    },
+    {
+      "id": "cyanohydrin-formation",
+      "title": "Cyanohydrin Formation",
+      "type": "nucleophilic-addition",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aldehyde" },
+        { "formula": "HCN", "name": "Hydrogen cyanide", "danger": "toxic" }
+      ],
+      "products": [
+        { "formula": "R-CH(OH)CN", "name": "Cyanohydrin", "yield": "85%" }
+      ],
+      "arrow": "→",
+      "conditions": "Trace of KCN or NaOH catalyst",
+      "mechanism": "Nucleophilic addition of cyanide ion followed by protonation",
+      "notes": "Reversible reaction, important for amino acid synthesis",
+      "difficulty": "easy",
+      "applications": [
+        "Strecker amino acid synthesis",
+        "Pharmaceutical intermediates"
+      ]
+    },
+    {
+      "id": "perkin-reaction",
+      "title": "Perkin Reaction",
+      "type": "condensation",
+      "reactants": [
+        { "formula": "Ar-CHO", "name": "Aromatic aldehyde" },
+        { "formula": "(CH₃CO)₂O", "name": "Acetic anhydride" }
+      ],
+      "products": [
+        {
+          "formula": "Ar-CH=CH-COOH",
+          "name": "Cinnamic acid derivative",
+          "yield": "60%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "Sodium acetate catalyst, 180°C",
+      "mechanism": "Aldol-type condensation with anhydride enolate",
+      "notes": "Good for cinnamic acid derivatives",
+      "difficulty": "intermediate",
+      "applications": ["Cinnamon flavor synthesis", "Pharmaceuticals"]
+    },
+    {
+      "id": "clemmensen-reduction",
+      "title": "Clemmensen Reduction",
+      "type": "reduction",
+      "reactants": [{ "formula": "R-CHO", "name": "Aldehyde" }],
+      "products": [{ "formula": "R-CH₃", "name": "Alkane", "yield": "75%" }],
+      "arrow": "→",
+      "conditions": "Zn-Hg amalgam, concentrated HCl, reflux",
+      "mechanism": "Carbanion intermediate on zinc surface",
+      "notes": "Acidic conditions - complementary to Wolff-Kishner",
+      "difficulty": "intermediate",
+      "applications": [
+        "Carbonyl to methylene reduction",
+        "Hydrocarbon synthesis"
+      ]
+    },
+    {
+      "id": "wolff-kishner",
+      "title": "Wolff-Kishner Reduction",
+      "type": "reduction",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aldehyde" },
+        { "formula": "NH₂NH₂", "name": "Hydrazine" }
+      ],
+      "products": [{ "formula": "R-CH₃", "name": "Alkane", "yield": "80%" }],
+      "arrow": "→",
+      "conditions": "KOH, ethylene glycol, 200°C",
+      "mechanism": "Hydrazone formation then elimination of N₂",
+      "notes": "Basic conditions - complementary to Clemmensen",
+      "difficulty": "intermediate",
+      "applications": ["Carbonyl reduction under basic conditions"]
+    },
+    {
+      "id": "grignard-addition",
+      "title": "Grignard Addition to Aldehydes",
+      "type": "nucleophilic-addition",
+      "reactants": [
+        { "formula": "R-CHO", "name": "Aldehyde" },
+        { "formula": "R'-Mg-X", "name": "Grignard reagent" }
+      ],
+      "products": [
+        {
+          "formula": "R-CH(R')-OH",
+          "name": "Secondary alcohol",
+          "yield": "90%"
+        }
+      ],
+      "arrow": "→",
+      "conditions": "Dry ether, then H₃O⁺ workup",
+      "mechanism": "Nucleophilic addition of carbanion equivalent",
+      "notes": "Forms secondary alcohols from aldehydes",
+      "difficulty": "intermediate",
+      "applications": ["Alcohol synthesis", "Carbon chain elongation"]
+    }
+  ],
+
+  "reactionGroups": {
+    "oxidation": {
+      "name": "Oxidation Reactions",
+      "description": "Aldehydes are easily oxidized to carboxylic acids",
+      "icon": "⚗️"
+    },
+    "reduction": {
+      "name": "Reduction Reactions",
+      "description": "Reduction to alcohols or hydrocarbons",
+      "icon": "⬇️"
+    },
+    "nucleophilic-addition": {
+      "name": "Nucleophilic Addition",
+      "description": "Attack on electrophilic carbonyl carbon",
+      "icon": "➕"
+    },
+    "condensation": {
+      "name": "Condensation Reactions",
+      "description": "Carbon-carbon bond forming reactions",
+      "icon": "🔗"
+    },
+    "tests": {
+      "name": "Qualitative Tests",
+      "description": "Identification and distinction tests",
+      "icon": "🧪"
+    }
+  },
+
+  "carbonylReactivity": {
+    "electrophilicityOrder": "Formaldehyde > Aliphatic Aldehydes > Aromatic Aldehydes > Ketones",
+    "reason": "Steric and electronic effects",
+    "nucleophileOrder": "Strong bases > Weak bases > Neutral nucleophiles"
+  },
+
+  "commonReagents": [
+    {
+      "name": "Tollens' Reagent",
+      "composition": "[Ag(NH₃)₂]⁺",
+      "use": "Aldehyde detection, silver mirror formation",
+      "specificity": "Aldehydes only"
+    },
+    {
+      "name": "Fehling's Solution",
+      "composition": "CuSO₄ + alkaline tartrate",
+      "use": "Reducing sugar detection",
+      "specificity": "Aliphatic aldehydes and reducing sugars"
+    },
+    {
+      "name": "Schiff's Reagent",
+      "composition": "Fuchsin dye + SO₂",
+      "use": "Aldehyde detection",
+      "observation": "Magenta color restoration"
+    },
+    {
+      "name": "Benedict's Reagent",
+      "composition": "Copper citrate complex",
+      "use": "Blood/urine glucose test",
+      "observation": "Green → Yellow → Red precipitate"
+    }
+  ]
+}

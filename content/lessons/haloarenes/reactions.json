@@ -1,0 +1,78 @@
+{
+  "lesson": "HaloArenes",
+  "color": "#a29bfe",
+  "reactions": [
+    {
+      "id": "sandmeyer-chlorination",
+      "title": "Sandmeyer Chlorination",
+      "type": "diazonium",
+      "reactants": [
+        { "formula": "Ar-N₂⁺Cl⁻", "name": "Benzenediazonium chloride" },
+        { "formula": "CuCl", "name": "Cuprous chloride" }
+      ],
+      "products": [
+        { "formula": "Ar-Cl", "name": "Chlorobenzene", "yield": "85%" },
+        { "formula": "N₂", "name": "Nitrogen gas" }
+      ],
+      "arrow": "→",
+      "conditions": "CuCl in HCl, 0-5°C",
+      "mechanism": "Free radical via copper intermediates",
+      "notes": "Classic method for introducing chlorine to aromatic rings",
+      "difficulty": "intermediate",
+      "applications": ["Chloroarene synthesis", "Dye intermediates"]
+    },
+    {
+      "id": "benzyne-amination",
+      "title": "Benzyne Mechanism with Amide",
+      "type": "elimination-addition",
+      "reactants": [
+        { "formula": "C₆H₅-Br", "name": "Bromobenzene" },
+        { "formula": "NaNH₂", "name": "Sodium amide" }
+      ],
+      "products": [
+        { "formula": "C₆H₅-NH₂", "name": "Aniline", "yield": "60%" },
+        { "formula": "NaBr", "name": "Sodium bromide" },
+        { "formula": "NH₃", "name": "Ammonia" }
+      ],
+      "arrow": "→",
+      "conditions": "Liquid ammonia, -33°C",
+      "mechanism": "Via benzyne intermediate (C₆H₄)",
+      "notes": "Forms mixture of ortho and meta anilines due to symmetrical benzyne",
+      "difficulty": "advanced",
+      "applications": ["Aniline synthesis", "Mechanism study"]
+    },
+    {
+      "id": "nucleophilic-substitution-activated",
+      "title": "S_NAr with Nitro Groups",
+      "type": "nucleophilic-substitution",
+      "reactants": [
+        { "formula": "O₂N-C₆H₄-Cl", "name": "4-Nitrochlorobenzene" },
+        { "formula": "OH⁻", "name": "Hydroxide ion" }
+      ],
+      "products": [
+        { "formula": "O₂N-C₆H₄-OH", "name": "4-Nitrophenol", "yield": "95%" },
+        { "formula": "Cl⁻", "name": "Chloride ion" }
+      ],
+      "arrow": "→",
+      "conditions": "Aqueous NaOH, reflux",
+      "mechanism": "Addition-elimination (Meisenheimer complex)",
+      "notes": "Nitro groups ortho/para to chlorine activate the ring for substitution",
+      "difficulty": "intermediate",
+      "applications": ["Nitrophenol production", "Dye synthesis"]
+    }
+  ],
+  "importantMechanisms": [
+    {
+      "name": "S_NAr (Addition-Elimination)",
+      "description": "Requires strong electron-withdrawing groups ortho/para to leaving group",
+      "intermediate": "Meisenheimer complex",
+      "rateDetermining": "Formation of Meisenheimer complex"
+    },
+    {
+      "name": "Benzyne (Elimination-Addition)",
+      "description": "Occurs with strong bases, forms highly reactive benzyne intermediate",
+      "intermediate": "Benzyne (aryne)",
+      "characteristic": "Gives mixture of substitution products"
+    }
+  ]
+}

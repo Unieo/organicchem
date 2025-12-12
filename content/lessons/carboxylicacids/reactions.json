@@ -1,0 +1,351 @@
+{
+  "lesson": "Carboxylic Acids",
+  "color": "#00b894",
+  "reactions": [
+    {
+      "id": "fischer-esterification",
+      "title": "Fischer Esterification",
+      "type": "esterification",
+      "reactants": [
+        { "formula": "R-COOH", "name": "Carboxylic acid" },
+        { "formula": "R'-OH", "name": "Alcohol" },
+        { "formula": "H⁺", "name": "Acid catalyst" }
+      ],
+      "products": [
+        { "formula": "R-COOR'", "name": "Ester", "yield": "60-90%" },
+        { "formula": "H₂O", "name": "Water" }
+      ],
+      "arrow": "⇌",
+      "conditions": "Conc. H₂SO₄ or HCl catalyst, heat, reversible",
+      "mechanism": "Protonation of carbonyl → nucleophilic attack → proton transfer → elimination",
+      "notes": "Equilibrium reaction. Drive to completion by removing water or using excess alcohol.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Ester synthesis",
+        "Biodiesel production",
+        "Flavor and fragrance industry"
+      ]
+    },
+    {
+      "id": "hell-volhard-zelinsky",
+      "title": "Hell-Volhard-Zelinsky Reaction",
+      "type": "halogenation",
+      "reactants": [
+        { "formula": "R-CH₂-COOH", "name": "Carboxylic acid" },
+        { "formula": "Br₂", "name": "Bromine" },
+        { "formula": "PBr₃ or P", "name": "Catalyst" }
+      ],
+      "products": [
+        { "formula": "R-CHBr-COOH", "name": "α-Bromo acid", "yield": "70-85%" },
+        { "formula": "HBr", "name": "Hydrogen bromide" }
+      ],
+      "arrow": "→",
+      "conditions": "Catalytic PBr₃ or red phosphorus, Br₂, heat",
+      "mechanism": "Forms acid bromide in situ → enolization → electrophilic bromination → hydrolysis",
+      "notes": "Specific for α-position. Cl₂ can be used but Br₂ is more common and selective.",
+      "difficulty": "intermediate",
+      "applications": [
+        "α-Amino acid synthesis",
+        "Pharmaceutical intermediates",
+        "Malonic ester synthesis"
+      ]
+    },
+    {
+      "id": "hunsdiecker-reaction",
+      "title": "Hunsdiecker Reaction",
+      "type": "decarboxylation",
+      "reactants": [
+        { "formula": "R-COOAg", "name": "Silver carboxylate" },
+        { "formula": "Br₂", "name": "Bromine" }
+      ],
+      "products": [
+        { "formula": "R-Br", "name": "Alkyl bromide", "yield": "40-70%" },
+        { "formula": "CO₂", "name": "Carbon dioxide", "state": "gas" },
+        { "formula": "AgBr", "name": "Silver bromide" }
+      ],
+      "arrow": "→",
+      "conditions": "Dry CCl₄, heat or light initiation",
+      "mechanism": "Free radical mechanism: Br• abstracts hydrogen, decarboxylation, radical recombination",
+      "notes": "Halide with one less carbon than starting acid. Works best with primary and some secondary acids.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Alkyl halide synthesis",
+        "Degradation reaction",
+        "Natural product synthesis"
+      ]
+    },
+    {
+      "id": "schmidt-reaction-acid",
+      "title": "Schmidt Reaction of Carboxylic Acids",
+      "type": "degradation",
+      "reactants": [
+        { "formula": "R-COOH", "name": "Carboxylic acid" },
+        { "formula": "HN₃", "name": "Hydrazoic acid", "danger": "explosive" },
+        { "formula": "H₂SO₄", "name": "Sulfuric acid" }
+      ],
+      "products": [
+        { "formula": "R-NH₂", "name": "Primary amine", "yield": "50-80%" },
+        { "formula": "CO₂", "name": "Carbon dioxide" },
+        { "formula": "N₂", "name": "Nitrogen gas" }
+      ],
+      "arrow": "→",
+      "conditions": "Conc. H₂SO₄, careful temperature control",
+      "mechanism": "Formation of acyl azide → rearrangement to isocyanate → hydrolysis to amine",
+      "notes": "Produces amine with one less carbon. Similar to Hofmann rearrangement but with acids instead of amides.",
+      "difficulty": "advanced",
+      "applications": [
+        "Amine synthesis",
+        "Degradation reaction",
+        "Natural product modification"
+      ]
+    },
+    {
+      "id": "kolbe-electrolysis",
+      "title": "Kolbe Electrolysis",
+      "type": "dimerization",
+      "reactants": [{ "formula": "2 R-COO⁻", "name": "Carboxylate ions" }],
+      "products": [
+        { "formula": "R-R", "name": "Hydrocarbon dimer", "yield": "30-80%" },
+        { "formula": "2 CO₂", "name": "Carbon dioxide" }
+      ],
+      "arrow": "→",
+      "conditions": "Electrolysis of concentrated carboxylate solution, anode reaction",
+      "mechanism": "Anodic oxidation to radicals → dimerization",
+      "notes": "Works best with straight-chain acids. Gives symmetrical alkanes. Side reactions include alkene formation.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Hydrocarbon synthesis",
+        "Fatty acid dimerization",
+        "Industrial chemistry"
+      ]
+    },
+    {
+      "id": "rosenmund-reduction",
+      "title": "Rosemund Reduction",
+      "type": "reduction",
+      "reactants": [
+        { "formula": "R-COCl", "name": "Acid chloride" },
+        { "formula": "H₂", "name": "Hydrogen" }
+      ],
+      "products": [
+        { "formula": "R-CHO", "name": "Aldehyde", "yield": "70-90%" },
+        { "formula": "HCl", "name": "Hydrogen chloride" }
+      ],
+      "arrow": "→",
+      "conditions": "H₂, Pd/BaSO₄ catalyst, quinoline or sulfur poison, 150°C",
+      "mechanism": "Catalytic hydrogenation with poisoned catalyst to prevent over-reduction",
+      "notes": "Stops at aldehyde stage. Catalyst poison prevents further reduction to alcohol.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Aldehyde synthesis",
+        "Pharmaceutical intermediates",
+        "Perfume industry"
+      ]
+    },
+    {
+      "id": "dakin-west-reaction",
+      "title": "Dakin-West Reaction",
+      "type": "acylation",
+      "reactants": [
+        { "formula": "R-CH(NH₂)-COOH", "name": "α-Amino acid" },
+        { "formula": "(R'-CO)₂O", "name": "Acid anhydride" },
+        { "formula": "Base", "name": "Pyridine or NaOH" }
+      ],
+      "products": [
+        {
+          "formula": "R-CH(NHCOR')-COCH₃",
+          "name": "α-Acetamido ketone",
+          "yield": "50-80%"
+        },
+        { "formula": "R'-COOH", "name": "Carboxylic acid" },
+        { "formula": "CO₂", "name": "Carbon dioxide" }
+      ],
+      "arrow": "→",
+      "conditions": "Pyridine or base, acetic anhydride common, heat",
+      "mechanism": "Acylation → decarboxylation → enolization → tautomerization",
+      "notes": "Converts α-amino acids to α-acylamino ketones. Useful in peptide chemistry.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Peptide modification",
+        "Amino acid derivatives",
+        "Pharmaceutical synthesis"
+      ]
+    },
+    {
+      "id": "arvndt-eistert",
+      "title": "Arndt-Eistert Synthesis",
+      "type": "homologation",
+      "reactants": [
+        { "formula": "R-COOH", "name": "Carboxylic acid" },
+        { "formula": "SOCl₂", "name": "Thionyl chloride" },
+        {
+          "formula": "CH₂N₂",
+          "name": "Diazomethane",
+          "danger": "toxic, explosive"
+        }
+      ],
+      "products": [
+        {
+          "formula": "R-CH₂-COOH",
+          "name": "Homologous acid",
+          "yield": "60-80%"
+        },
+        { "formula": "N₂", "name": "Nitrogen gas" }
+      ],
+      "arrow": "→",
+      "conditions": "1. SOCl₂; 2. CH₂N₂ (ether); 3. Ag₂O or heat/light; 4. Hydrolysis",
+      "mechanism": "Acid chloride → diazoketone → Wolff rearrangement → ketene → hydrolysis",
+      "notes": "Adds one CH₂ group. Modern versions use safer diazo transfer reagents.",
+      "difficulty": "advanced",
+      "applications": [
+        "Carbon chain elongation",
+        "Natural product synthesis",
+        "Pharmaceutical intermediates"
+      ]
+    },
+    {
+      "id": "tishchenko-reaction",
+      "title": "Tishchenko Reaction",
+      "type": "disproportionation",
+      "reactants": [{ "formula": "2 R-CHO", "name": "Aldehyde" }],
+      "products": [
+        { "formula": "R-COO-CH₂-R", "name": "Ester", "yield": "70-95%" }
+      ],
+      "arrow": "→",
+      "conditions": "Aluminum alkoxide catalyst (Al(OCH₂R)₃)",
+      "mechanism": "Hydride transfer between two aldehyde molecules via aluminum complex",
+      "notes": "Converts aldehydes to esters. Industrial method for ethyl acetate from acetaldehyde.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Ester synthesis",
+        "Industrial chemistry",
+        "Ethyl acetate production"
+      ]
+    },
+    {
+      "id": "dieckmann-condensation",
+      "title": "Dieckmann Condensation",
+      "type": "condensation",
+      "reactants": [
+        {
+          "formula": "CH₂(COOC₂H₅)-(CH₂)ₙ-CH₂(COOC₂H₅)",
+          "name": "Diethyl dicarboxylate"
+        }
+      ],
+      "products": [
+        {
+          "formula": "β-Keto ester (cyclic)",
+          "name": "Cyclic β-keto ester",
+          "yield": "40-80%"
+        },
+        { "formula": "C₂H₅OH", "name": "Ethanol" }
+      ],
+      "arrow": "→",
+      "conditions": "Sodium ethoxide, intramolecular Claisen condensation",
+      "mechanism": "Intramolecular Claisen condensation to form 5-, 6-, or 7-membered rings",
+      "notes": "Intramolecular version of Claisen condensation. Forms cyclic β-keto esters.",
+      "difficulty": "intermediate",
+      "applications": [
+        "Cyclic compound synthesis",
+        "Steroid synthesis",
+        "Natural product synthesis"
+      ]
+    }
+  ],
+
+  "reactionGroups": {
+    "esterification": {
+      "name": "Esterification Reactions",
+      "description": "Formation of esters from carboxylic acids",
+      "icon": "🍯"
+    },
+    "halogenation": {
+      "name": "Halogenation Reactions",
+      "description": "Introduction of halogen atoms",
+      "icon": "☢️"
+    },
+    "decarboxylation": {
+      "name": "Decarboxylation Reactions",
+      "description": "Loss of CO₂ from carboxylic acids",
+      "icon": "⬆️"
+    },
+    "reduction": {
+      "name": "Reduction Reactions",
+      "description": "Reduction to aldehydes or alcohols",
+      "icon": "⬇️"
+    },
+    "dimerization": {
+      "name": "Dimerization Reactions",
+      "description": "Formation of dimers from monomers",
+      "icon": "2️⃣"
+    },
+    "homologation": {
+      "name": "Homologation Reactions",
+      "description": "Increasing carbon chain length",
+      "icon": "➕"
+    },
+    "condensation": {
+      "name": "Condensation Reactions",
+      "description": "C-C bond formation with loss of small molecule",
+      "icon": "🔗"
+    }
+  },
+
+  "acidityData": {
+    "pKaValues": {
+      "formic": 3.75,
+      "acetic": 4.76,
+      "propanoic": 4.88,
+      "butanoic": 4.82,
+      "chloroacetic": 2.86,
+      "dichloroacetic": 1.48,
+      "trichloroacetic": 0.7,
+      "benzoic": 4.2,
+      "oxalic": 1.25,
+      "malonic": 2.83,
+      "succinic": 4.21
+    },
+    "factorsIncreasingAcidity": [
+      "Electron-withdrawing groups (especially α-position)",
+      "Resonance stabilization of conjugate base",
+      "Increased s-character in hybridized orbitals",
+      "Better solvation of conjugate base"
+    ],
+    "comparison": "Carboxylic acids are much stronger than alcohols (pKa ~16) but weaker than mineral acids"
+  },
+
+  "derivativeReactivity": {
+    "order": "Acid chlorides > Acid anhydrides > Thioesters > Esters ≈ Carboxylic acids > Amides",
+    "interconversion": "More reactive → Less reactive is easy; reverse requires special conditions",
+    "characteristicReactions": {
+      "acidChlorides": "Very reactive, fuming, hydrolyze easily",
+      "anhydrides": "Less reactive than chlorides, used industrially",
+      "esters": "Mild conditions for hydrolysis, pleasant odors",
+      "amides": "Least reactive, high melting points, hydrogen bonding"
+    }
+  },
+
+  "spectralData": {
+    "IR": {
+      "O-H stretch": "2500-3300 cm⁻¹ (very broad, carboxylic acid dimer)",
+      "C=O stretch": "1700-1725 cm⁻¹ (strong, slightly lower than ketones)",
+      "C-O stretch": "1210-1320 cm⁻¹",
+      "O-H bend": "~1400 cm⁻¹",
+      "note": "In dilute solution, monomer shows sharper O-H at ~3520 cm⁻¹"
+    },
+    "NMR": {
+      "¹H carboxyl proton": "δ 10-13 ppm (very downfield, broad)",
+      "¹³C carbonyl": "δ 165-185 ppm",
+      "note": "Carboxylic protons exchange with D₂O and disappear"
+    },
+    "MS": {
+      "commonFragments": [
+        "M⁺ often weak",
+        "M-17 (loss of OH)",
+        "M-45 (loss of COOH)",
+        "m/z 45 (COOH⁺)",
+        "m/z 60 (McLafferty rearrangement for acids)"
+      ]
+    }
+  }
+}
